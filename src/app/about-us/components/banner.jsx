@@ -32,7 +32,7 @@ const Banner = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col sm={4} md={4} lg={3}>
+                    <Col sm={4} md={4} lg={6}>
                         <div className={styles.imgBox2}>
                             <div className={styles.imgItem}>
                                 <Image src={IMG02.src} alt="Img-02" fill />
