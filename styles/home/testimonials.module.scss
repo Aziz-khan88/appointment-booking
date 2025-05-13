@@ -1,0 +1,585 @@
+.testimonialSec {
+  .embla {
+    position: relative;
+    .embla__viewport {
+      overflow: hidden;
+      .embla__container {
+        display: flex;
+        touch-action: pan-y pinch-zoom;
+        .embla__slide {
+          transform: translate3d(0, 0, 0);
+          flex: 0 0 100%;
+          min-width: 0;
+          position: relative;
+          .testimonialBox {
+            max-width: 800px;
+            margin: 50px auto;
+            position: relative;
+            &::after {
+              content: "";
+              background: #f3f5f8;
+              width: 400px;
+              height: calc(100% - 75px);
+              position: absolute;
+              left: 50%;
+              transform: translate(-50%, 0px);
+              top: 75px;
+              z-index: -1;
+            }
+            .testImg {
+              position: relative;
+              height: 150px;
+              width: 150px;
+              border-radius: 100%;
+              margin: 0px auto 30px;
+              img {
+                border-radius: 100%;
+                object-fit: cover;
+                object-position: center;
+              }
+            }
+            svg {
+              margin-bottom: 30px;
+            }
+            p {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 17px;
+              line-height: 24px;
+              text-align: center;
+              color: #000000;
+              margin-bottom: 30px;
+            }
+            .designation {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 22px;
+              line-height: 22px;
+              text-align: center;
+              color: #000000;
+              padding-bottom: 40px;
+
+              .starIcon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                margin-top: 20px;
+
+                svg {
+                  width: 18px;
+                  height: auto;
+                  margin-bottom: 0px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .embla__dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0px;
+      width: 200px;
+      margin: auto;
+
+      .embla__dot {
+        height: 3px;
+        flex: 0 0 100%;
+        background: rgb(115 133 143 / 20%);
+        &.isActive {
+          background: #ff0004;
+        }
+      }
+    }
+    .embla_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0px;
+
+      div {
+        height: 54px;
+        width: 54px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border: 1px solid #ff0004;
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translate(0px, -50%);
+
+        svg {
+          width: 10px;
+          transform: rotate(-180deg);
+          height: 20px;
+
+          path {
+            opacity: 1;
+          }
+        }
+
+        &:hover {
+          transition: 0.3s linear;
+          background: #ff0004;
+          svg {
+            path {
+              fill: #fff;
+            }
+          }
+        }
+
+        &.embla_prev {
+          right: 0px;
+          left: unset;
+          svg {
+            transform: rotate(0deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .testimonialSec {
+    .embla {
+      .embla__viewport {
+        .embla__container {
+          .embla__slide {
+            .testimonialBox {
+              max-width: 700px;
+              margin: 50px auto;
+              &::after {
+                width: 400px;
+                height: calc(100% - 75px);
+                top: 75px;
+              }
+              .testImg {
+                height: 150px;
+                width: 150px;
+                margin: 0px auto 30px;
+              }
+              svg {
+                margin-bottom: 30px;
+              }
+              p {
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 25px;
+              }
+              .designation {
+                font-size: 20px;
+                line-height: 20px;
+                padding-bottom: 30px;
+
+                .starIcon {
+                  gap: 10px;
+                  margin-top: 20px;
+
+                  svg {
+                    width: 17px;
+                    margin-bottom: 0px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .embla__dots {
+        width: 200px;
+      }
+      .embla_container {
+        div {
+          height: 54px;
+          width: 54px;
+          svg {
+            width: 10px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+  .testimonialSec {
+    .embla {
+      .embla__viewport {
+        .embla__container {
+          .embla__slide {
+            .testimonialBox {
+              max-width: 600px;
+              margin: 50px auto;
+              &::after {
+                width: 400px;
+                height: calc(100% - 75px);
+                top: 75px;
+              }
+              .testImg {
+                height: 140px;
+                width: 140px;
+                margin: 0px auto 30px;
+              }
+              svg {
+                margin-bottom: 30px;
+              }
+              p {
+                font-size: 15px;
+                line-height: 20px;
+                margin-bottom: 20px;
+              }
+              .designation {
+                font-size: 18px;
+                line-height: 18px;
+                padding-bottom: 30px;
+
+                .starIcon {
+                  gap: 10px;
+                  margin-top: 20px;
+
+                  svg {
+                    width: 16px;
+                    margin-bottom: 0px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .embla__dots {
+        width: 160px;
+      }
+      .embla_container {
+        div {
+          height: 50px;
+          width: 50px;
+          svg {
+            width: 9px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+  .testimonialSec {
+    .embla {
+      .embla__viewport {
+        .embla__container {
+          .embla__slide {
+            .testimonialBox {
+              max-width: 600px;
+              margin: 50px auto;
+              &::after {
+                width: 400px;
+                height: calc(100% - 75px);
+                top: 75px;
+              }
+              .testImg {
+                height: 140px;
+                width: 140px;
+                margin: 0px auto 30px;
+              }
+              svg {
+                margin-bottom: 30px;
+              }
+              p {
+                font-size: 15px;
+                line-height: 20px;
+                margin-bottom: 20px;
+              }
+              .designation {
+                font-size: 18px;
+                line-height: 18px;
+                padding-bottom: 30px;
+
+                .starIcon {
+                  gap: 10px;
+                  margin-top: 20px;
+
+                  svg {
+                    width: 16px;
+                    margin-bottom: 0px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .embla__dots {
+        width: 160px;
+      }
+      .embla_container {
+        div {
+          height: 50px;
+          width: 50px;
+          svg {
+            width: 9px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  .testimonialSec {
+    .embla {
+      .embla__viewport {
+        .embla__container {
+          .embla__slide {
+            .testimonialBox {
+              max-width: 600px;
+              margin: 50px auto;
+              &::after {
+                width: 350px;
+                height: calc(100% - 75px);
+                top: 75px;
+              }
+              .testImg {
+                height: 130px;
+                width: 130px;
+                margin: 0px auto 30px;
+              }
+              svg {
+                margin-bottom: 30px;
+              }
+              p {
+                font-size: 15px;
+                line-height: 20px;
+                margin-bottom: 20px;
+              }
+              .designation {
+                font-size: 18px;
+                line-height: 18px;
+                padding-bottom: 30px;
+
+                .starIcon {
+                  gap: 10px;
+                  margin-top: 20px;
+
+                  svg {
+                    width: 16px;
+                    margin-bottom: 0px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .embla__dots {
+        width: 130px;
+      }
+      .embla_container {
+        div {
+          height: 50px;
+          width: 50px;
+          svg {
+            width: 9px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+  .testimonialSec {
+    .embla {
+      .embla__viewport {
+        .embla__container {
+          .embla__slide {
+            .testimonialBox {
+              max-width: 450px;
+              margin: 50px auto;
+              &::after {
+                width: 350px;
+                height: calc(100% - 75px);
+                top: 75px;
+              }
+              .testImg {
+                height: 130px;
+                width: 130px;
+                margin: 0px auto 30px;
+              }
+              svg {
+                margin-bottom: 30px;
+                height: 60px;
+              }
+              p {
+                font-size: 15px;
+                line-height: 20px;
+                margin-bottom: 20px;
+              }
+              .designation {
+                font-size: 18px;
+                line-height: 18px;
+                padding-bottom: 30px;
+
+                .starIcon {
+                  gap: 10px;
+                  margin-top: 20px;
+
+                  svg {
+                    width: 16px;
+                    margin-bottom: 0px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .embla__dots {
+        width: 130px;
+      }
+      .embla_container {
+        div {
+          height: 45px;
+          width: 45px;
+          svg {
+            width: 8px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .testimonialSec {
+    .embla {
+      .embla__viewport {
+        .embla__container {
+          .embla__slide {
+            .testimonialBox {
+              max-width: 450px;
+              margin: 50px auto;
+              &::after {
+                width: 350px;
+                height: calc(100% - 60px);
+                top: 60px;
+              }
+              .testImg {
+                height: 120px;
+                width: 120px;
+                margin: 0px auto 30px;
+              }
+              svg {
+                margin-bottom: 30px;
+                height: 50px;
+              }
+              p {
+                font-size: 15px;
+                line-height: 20px;
+                margin-bottom: 20px;
+              }
+              .designation {
+                font-size: 18px;
+                line-height: 18px;
+                padding-bottom: 30px;
+
+                .starIcon {
+                  gap: 5px;
+                  margin-top: 10px;
+
+                  svg {
+                    width: 15px;
+                    margin-bottom: 0px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .embla__dots {
+        width: 130px;
+      }
+      .embla_container {
+        div {
+          height: 45px;
+          width: 45px;
+          svg {
+            width: 8px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .testimonialSec {
+    .embla {
+      .embla__viewport {
+        .embla__container {
+          .embla__slide {
+            .testimonialBox {
+              max-width: 250px;
+              margin: 50px auto;
+              &::after {
+                width: 280px;
+                height: calc(100% - 60px);
+                top: 60px;
+              }
+              .testImg {
+                height: 100px;
+                width: 100px;
+                margin: 0px auto 20px;
+              }
+              svg {
+                margin-bottom: 30px;
+                height: 30px;
+              }
+              p {
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 20px;
+              }
+              .designation {
+                font-size: 16px;
+                line-height: 16px;
+                padding-bottom: 20px;
+
+                .starIcon {
+                  gap: 5px;
+                  margin-top: 10px;
+
+                  svg {
+                    width: 15px;
+                    margin-bottom: 0px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .embla__dots {
+        width: 80px;
+      }
+      .embla_container {
+        div {
+          height: 35px;
+          width: 35px;
+          svg {
+            width: 8px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

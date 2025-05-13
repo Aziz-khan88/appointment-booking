@@ -1,0 +1,799 @@
+.faqsSec {
+  .faqsBox {
+    background: #f3f3f3;
+    border-radius: 41px;
+    padding: 40px;
+    .faqsBoxWhite {
+      background: #fff;
+      border-radius: 41px;
+      padding: 40px;
+
+      .subtitle {
+        width: 224px;
+        height: 57px;
+        background: #e6e6e6;
+        border-radius: 50px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #000000;
+        margin: 0px auto 20px;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        color: #5c5c5c;
+      }
+      .faqsMainBox {
+        margin-top: 30px;
+        border: 1px solid #e2e8f0;
+        border-radius: 20px;
+        padding: 0px 20px;
+        overflow: hidden;
+
+        .faqsListing {
+          .faqsTitle {
+            height: 70px;
+            font-weight: 600;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            color: #020617;
+            border-bottom: 1px solid #e2e8f0;
+            cursor: pointer;
+          }
+
+          .iconBox {
+            margin-right: 30px;
+            background: #ff0004;
+            height: 30px;
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            transition: all 0.5s ease;
+            svg {
+              height: auto;
+              width: 12px;
+              text-align: center;
+            }
+          }
+
+          .faqscontent {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, opacity 0.4s ease;
+          }
+
+          &.active {
+            .faqscontent {
+              opacity: 1;
+              max-height: 500px;
+              padding: 20px;
+            }
+
+            .iconBox {
+              svg {
+                transform: rotate(45deg);
+                rect {
+                  fill: #fff;
+                }
+              }
+            }
+          }
+
+          &:last-child {
+            .faqsTitle {
+              border-bottom: 0;
+            }
+          }
+        }
+      }
+      .faqCtaSec {
+        margin-top: 30px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 30px;
+        padding: 50px 50px;
+        text-align: center;
+        .faqsImage {
+          margin-bottom: 10px;
+          img {
+            margin-left: -10px;
+            width: 42px;
+            height: auto;
+          }
+        }
+        h5 {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 26px;
+          color: #ffffff;
+          margin-bottom: 10px;
+        }
+        p {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 26px;
+          color: #ffffff;
+          margin-bottom: 20px;
+        }
+        .fromBox {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          input[type="email"] {
+            flex: 0 0 70%;
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+            height: 55px;
+            font-size: 16px;
+            font-weight: 500;
+            font-style: normal;
+            font-weight: 500;
+            &:focus {
+              outline: none;
+            }
+          }
+          input[type="submit"] {
+            flex: 0 0 calc(30% - 10px);
+            background: #ff0004;
+            border-radius: 10px;
+            width: 210px;
+            height: 55px;
+            transition: background 0.3s, font-weight 0.3s;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            transition: color 0.3s, font-weight 0.3s;
+            display: flex;
+            border: 0px;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .faqsSec {
+    .faqsBox {
+      border-radius: 35px;
+      padding: 35px;
+      .faqsBoxWhite {
+        border-radius: 35px;
+        padding: 35px;
+        .subtitle {
+          width: 200px;
+          height: 50px;
+          margin-bottom: 15px;
+          font-size: 20px;
+          line-height: 22px;
+        }
+        h2 {
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 17px;
+          line-height: 24px;
+        }
+        .faqsMainBox {
+          margin-top: 25px;
+
+          .faqsListing {
+            .faqsTitle {
+              height: 65px;
+              font-size: 17px;
+            }
+
+            .iconBox {
+              margin-right: 20px;
+              height: 25px;
+              width: 25px;
+              svg {
+                height: auto;
+                width: 12px;
+              }
+            }
+
+            .faqscontent {
+              font-size: 17px;
+              line-height: 27px;
+            }
+          }
+        }
+        .faqCtaSec {
+          margin-top: 25px;
+          border-radius: 25px;
+          padding: 45px;
+          .faqsImage {
+            img {
+              width: 42px;
+            }
+          }
+          h5 {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 15px;
+            line-height: 22px;
+            margin-bottom: 15px;
+          }
+          .fromBox {
+            input[type="email"] {
+              flex: 0 0 70%;
+              padding: 10px 15px;
+              height: 50px;
+              font-size: 15px;
+            }
+            input[type="submit"] {
+              flex: 0 0 calc(30% - 10px);
+              padding: 10px 15px;
+              height: 50px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+  .faqsSec {
+    .faqsBox {
+      border-radius: 30px;
+      padding: 30px;
+      .faqsBoxWhite {
+        border-radius: 30px;
+        padding: 30px;
+        .subtitle {
+          width: 200px;
+          height: 48px;
+          margin-bottom: 15px;
+          font-size: 18px;
+          line-height: 18px;
+        }
+        h2 {
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 22px;
+        }
+        .faqsMainBox {
+          margin-top: 20px;
+
+          .faqsListing {
+            .faqsTitle {
+              height: 60px;
+              font-size: 16px;
+            }
+
+            .iconBox {
+              margin-right: 15px;
+              height: 20px;
+              width: 20px;
+              svg {
+                height: auto;
+                width: 11px;
+              }
+            }
+
+            .faqscontent {
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+        }
+        .faqCtaSec {
+          margin-top: 20px;
+          border-radius: 20px;
+          padding: 40px;
+          .faqsImage {
+            img {
+              width: 40px;
+            }
+          }
+          h5 {
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 20px;
+          }
+          .fromBox {
+            input[type="email"] {
+              flex: 0 0 70%;
+              padding: 10px 15px;
+              height: 45px;
+              font-size: 14px;
+            }
+            input[type="submit"] {
+              flex: 0 0 calc(30% - 10px);
+              padding: 10px 15px;
+              height: 45px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+  .faqsSec {
+    .faqsBox {
+      border-radius: 25px;
+      padding: 25px;
+      .faqsBoxWhite {
+        border-radius: 25px;
+        padding: 25px;
+        .subtitle {
+          width: 200px;
+          height: 45px;
+          margin-bottom: 15px;
+          font-size: 17px;
+          line-height: 17px;
+        }
+        h2 {
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 22px;
+        }
+        .faqsMainBox {
+          margin-top: 20px;
+
+          .faqsListing {
+            .faqsTitle {
+              height: 60px;
+              font-size: 15px;
+            }
+
+            .iconBox {
+              margin-right: 15px;
+              height: 20px;
+              width: 20px;
+              svg {
+                height: auto;
+                width: 11px;
+              }
+            }
+
+            .faqscontent {
+              font-size: 15px;
+              line-height: 22px;
+            }
+          }
+        }
+        .faqCtaSec {
+          margin-top: 20px;
+          border-radius: 20px;
+          padding: 40px;
+          .faqsImage {
+            img {
+              width: 40px;
+            }
+          }
+          h5 {
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 20px;
+          }
+          .fromBox {
+            input[type="email"] {
+              flex: 0 0 70%;
+              padding: 10px 15px;
+              height: 45px;
+              font-size: 14px;
+            }
+            input[type="submit"] {
+              flex: 0 0 calc(30% - 10px);
+              padding: 10px 15px;
+              height: 45px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  .faqsSec {
+    .faqsBox {
+      border-radius: 25px;
+      padding: 25px;
+      .faqsBoxWhite {
+        border-radius: 25px;
+        padding: 25px;
+        .subtitle {
+          width: 200px;
+          height: 45px;
+          margin-bottom: 15px;
+          font-size: 17px;
+          line-height: 17px;
+        }
+        h2 {
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 22px;
+        }
+        .faqsMainBox {
+          margin-top: 20px;
+
+          .faqsListing {
+            .faqsTitle {
+              height: 60px;
+              font-size: 15px;
+            }
+
+            .iconBox {
+              margin-right: 15px;
+              height: 20px;
+              width: 20px;
+              svg {
+                height: auto;
+                width: 11px;
+              }
+            }
+
+            .faqscontent {
+              font-size: 15px;
+              line-height: 22px;
+            }
+          }
+        }
+        .faqCtaSec {
+          margin-top: 20px;
+          border-radius: 20px;
+          padding: 40px;
+          .faqsImage {
+            img {
+              width: 40px;
+            }
+          }
+          h5 {
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 20px;
+          }
+          .fromBox {
+            input[type="email"] {
+              flex: 0 0 70%;
+              padding: 10px 15px;
+              height: 45px;
+              font-size: 14px;
+            }
+            input[type="submit"] {
+              flex: 0 0 calc(30% - 10px);
+              padding: 10px 15px;
+              height: 45px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+  .faqsSec {
+    .faqsBox {
+      border-radius: 25px;
+      padding: 25px;
+      .faqsBoxWhite {
+        border-radius: 25px;
+        padding: 25px;
+        .subtitle {
+          width: 200px;
+          height: 45px;
+          margin-bottom: 15px;
+          font-size: 17px;
+          line-height: 17px;
+        }
+        h2 {
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 22px;
+        }
+        .faqsMainBox {
+          margin-top: 20px;
+
+          .faqsListing {
+            .faqsTitle {
+              height: 60px;
+              font-size: 15px;
+            }
+
+            .iconBox {
+              margin-right: 15px;
+              height: 20px;
+              width: 20px;
+              svg {
+                height: auto;
+                width: 11px;
+              }
+            }
+
+            .faqscontent {
+              font-size: 15px;
+              line-height: 22px;
+            }
+          }
+        }
+        .faqCtaSec {
+          margin-top: 20px;
+          border-radius: 20px;
+          padding: 40px;
+          .faqsImage {
+            img {
+              width: 40px;
+            }
+          }
+          h5 {
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 20px;
+          }
+          .fromBox {
+            input[type="email"] {
+              flex: 0 0 70%;
+              padding: 10px 15px;
+              height: 45px;
+              font-size: 14px;
+            }
+            input[type="submit"] {
+              flex: 0 0 calc(30% - 10px);
+              padding: 10px 15px;
+              height: 45px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .faqsSec {
+    .faqsBox {
+      border-radius: 20px;
+      padding: 20px;
+      .faqsBoxWhite {
+        border-radius: 20px;
+        padding: 20px;
+        .subtitle {
+          width: 200px;
+          height: 45px;
+          margin-bottom: 15px;
+          font-size: 15px;
+          line-height: 15px;
+        }
+        h2 {
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 22px;
+        }
+        .faqsMainBox {
+          margin-top: 20px;
+
+          .faqsListing {
+            .faqsTitle {
+              padding: 15px 0px;
+              height: auto;
+              font-size: 14px;
+              line-height: normal;
+            }
+
+            .iconBox {
+              margin-right: 10px;
+              height: 18px;
+              width: 18px;
+              svg {
+                height: auto;
+                width: 10px;
+              }
+            }
+
+            .faqscontent {
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+        }
+        .faqCtaSec {
+          margin-top: 20px;
+          border-radius: 20px;
+          padding: 40px;
+          .faqsImage {
+            img {
+              width: 35px;
+            }
+          }
+          h5 {
+            font-size: 17px;
+            line-height: 20px;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 20px;
+          }
+          .fromBox {
+            input[type="email"] {
+              flex: 0 0 70%;
+              padding: 10px 15px;
+              height: 40px;
+              border-radius: 5px;
+              font-size: 14px;
+            }
+            input[type="submit"] {
+              flex: 0 0 calc(30% - 5px);
+              padding: 10px 15px;
+              border-radius: 5px;
+              height: 40px;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .faqsSec {
+    .faqsBox {
+      border-radius: 20px;
+      padding: 10px 20px;
+      .faqsBoxWhite {
+        border-radius: 20px;
+        padding: 15px 0px;
+        .subtitle {
+          width: 200px;
+          height: 45px;
+          margin-bottom: 15px;
+          font-size: 15px;
+          line-height: 15px;
+        }
+        h2 {
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 22px;
+        }
+        .faqsMainBox {
+          margin-top: 20px;
+          padding: 0 10px;
+          .faqsListing {
+            .faqsTitle {
+              padding: 15px 0px;
+              height: auto;
+              font-size: 14px;
+              line-height: normal;
+              justify-content: flex-start;
+              align-items: flex-start;
+            }
+
+            .iconBox {
+              margin-right: 10px;
+              height: 18px;
+              width: 18px;
+              flex: 0 0 18px;
+              svg {
+                height: auto;
+                width: 10px;
+              }
+            }
+
+            .faqscontent {
+              font-size: 14px;
+              line-height: 20px;
+              padding: 10px;
+            }
+            &.active {
+              .faqscontent {
+                padding: 10px;
+              }
+            }
+          }
+        }
+        .faqCtaSec {
+          margin-top: 20px;
+          border-radius: 15px;
+          padding: 20px;
+          .faqsImage {
+            img {
+              width: 35px;
+            }
+          }
+          h5 {
+            font-size: 17px;
+            line-height: 20px;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 20px;
+          }
+          .fromBox {
+            flex-wrap: wrap;
+            input[type="email"] {
+              flex: 0 0 100%;
+              padding: 10px 15px;
+              height: 40px;
+              border-radius: 5px;
+              font-size: 14px;
+              margin-bottom: 10px;
+            }
+            input[type="submit"] {
+              flex: 0 0 100%;
+              padding: 10px 15px;
+              border-radius: 5px;
+              height: 40px;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,615 @@
+.abtSection {
+  padding: 200px 0px 0px;
+  h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  .imgBox1 {
+    .imgItem {
+      position: relative;
+      height: 380px;
+      margin-bottom: 20px;
+      border-radius: 40px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 37px;
+        color: #ffffff;
+        margin-bottom: 0px;
+        span {
+          display: block;
+          font-size: 66px;
+          line-height: 66px;
+          font-weight: 600;
+        }
+      }
+      &:first-child {
+        background: #ff0004;
+        border-radius: 40px;
+        padding: 25px;
+        height: 480px;
+        .icon {
+          background: #d30609;
+          height: 75px;
+          width: 75px;
+          border-radius: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      img {
+        object-fit: cover;
+        border-radius: 40px;
+      }
+    }
+  }
+  .imgBox2 {
+    .imgItem {
+      position: relative;
+      margin-bottom: 20px;
+      height: 500px;
+      &:first-child {
+        height: 360px;
+      }
+      img {
+        object-fit: cover;
+        border-radius: 40px;
+      }
+    }
+  }
+  .imgBox3 {
+    .imgItem {
+      position: relative;
+      height: 430px;
+      margin-bottom: 20px;
+      border-radius: 40px;
+      &:last-child {
+        background: #000;
+        border-radius: 40px;
+        padding: 25px;
+        display: flex;
+        align-items: flex-end;
+        h5 {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 50px;
+          line-height: 55px;
+          color: #ffffff;
+          margin-bottom: 0px;
+          span {
+            color: #d30609;
+          }
+        }
+      }
+      img {
+        object-fit: cover;
+        border-radius: 40px;
+      }
+    }
+  }
+}
+.contactSec {
+  padding: 200px 0px 0px;
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .abtSection {
+    padding: 150px 0px 0px;
+    h1 {
+      font-size: 45px;
+      line-height: 50px;
+      margin-bottom: 20px;
+    }
+    .imgBox1 {
+      .imgItem {
+        height: 350px;
+        margin-bottom: 20px;
+        p {
+          font-size: 30px;
+          line-height: 35px;
+          span {
+            font-size: 55px;
+            line-height: 60px;
+          }
+        }
+        &:first-child {
+          border-radius: 30px;
+          padding: 25px;
+          height: 430px;
+          .icon {
+            height: 60px;
+            width: 60px;
+            border-radius: 10px;
+            svg {
+              height: 40px;
+            }
+          }
+        }
+        img {
+          border-radius: 30px;
+        }
+      }
+    }
+    .imgBox2 {
+      .imgItem {
+        margin-bottom: 20px;
+        height: 490px;
+        &:first-child {
+          height: 290px;
+        }
+        img {
+          border-radius: 30px;
+        }
+      }
+    }
+    .imgBox3 {
+      .imgItem {
+        height: 390px;
+        margin-bottom: 20px;
+        border-radius: 30px;
+        &:last-child {
+          border-radius: 30px;
+          padding: 25px;
+          h5 {
+            font-size: 45px;
+            line-height: 50px;
+          }
+        }
+        img {
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+  .contactSec {
+    padding: 150px 0px 0px;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+  .abtSection {
+    padding: 130px 0px 0px;
+    h1 {
+      font-size: 40px;
+      line-height: 45px;
+      margin-bottom: 10px;
+    }
+    .imgBox1 {
+      .imgItem {
+        height: 300px;
+        margin-bottom: 20px;
+        p {
+          font-size: 28px;
+          line-height: 32px;
+          span {
+            font-size: 50px;
+            line-height: 55px;
+          }
+        }
+        &:first-child {
+          border-radius: 25px;
+          padding: 25px;
+          height: 400px;
+          .icon {
+            height: 55px;
+            width: 55px;
+            border-radius: 10px;
+            svg {
+              height: 35px;
+            }
+          }
+        }
+        img {
+          border-radius: 25px;
+        }
+      }
+    }
+    .imgBox2 {
+      .imgItem {
+        margin-bottom: 20px;
+        height: 410px;
+        &:first-child {
+          height: 290px;
+        }
+        img {
+          border-radius: 25px;
+        }
+      }
+    }
+    .imgBox3 {
+      .imgItem {
+        height: 350px;
+        margin-bottom: 20px;
+        border-radius: 25px;
+        &:last-child {
+          border-radius: 25px;
+          padding: 25px;
+          h5 {
+            font-size: 40px;
+            line-height: 45px;
+          }
+        }
+        img {
+          border-radius: 25px;
+        }
+      }
+    }
+  }
+  .contactSec {
+    padding: 130px 0px 0px;
+  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+  .abtSection {
+    padding: 120px 0px 0px;
+    h1 {
+      font-size: 40px;
+      line-height: 45px;
+      margin-bottom: 10px;
+    }
+    .imgBox1 {
+      .imgItem {
+        height: 280px;
+        margin-bottom: 20px;
+        p {
+          font-size: 24px;
+          line-height: 30px;
+          span {
+            font-size: 45px;
+            line-height: 50px;
+          }
+        }
+        &:first-child {
+          border-radius: 20px;
+          padding: 25px;
+          height: 380px;
+          .icon {
+            height: 55px;
+            width: 55px;
+            border-radius: 10px;
+            svg {
+              height: 35px;
+            }
+          }
+        }
+        img {
+          border-radius: 20px;
+        }
+      }
+    }
+    .imgBox2 {
+      .imgItem {
+        margin-bottom: 20px;
+        height: 380px;
+        &:first-child {
+          height: 280px;
+        }
+        img {
+          border-radius: 20px;
+        }
+      }
+    }
+    .imgBox3 {
+      .imgItem {
+        height: 330px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        &:last-child {
+          border-radius: 20px;
+          padding: 20px;
+          h5 {
+            font-size: 35px;
+            line-height: 40px;
+          }
+        }
+        img {
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+  .contactSec {
+    padding: 120px 0px 0px;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  .abtSection {
+    padding: 120px 0px 0px;
+    h1 {
+      font-size: 40px;
+      line-height: 45px;
+      margin-bottom: 10px;
+    }
+    .imgBox1 {
+      .imgItem {
+        height: 280px;
+        margin-bottom: 20px;
+        p {
+          font-size: 22px;
+          line-height: 28px;
+          span {
+            font-size: 40px;
+            line-height: 45px;
+          }
+        }
+        &:first-child {
+          border-radius: 20px;
+          padding: 15px;
+          height: 320px;
+          .icon {
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            svg {
+              height: 30px;
+            }
+          }
+        }
+        img {
+          border-radius: 20px;
+        }
+      }
+    }
+    .imgBox2 {
+      .imgItem {
+        margin-bottom: 20px;
+        height: 330px;
+        &:first-child {
+          height: 270px;
+        }
+        img {
+          border-radius: 20px;
+        }
+      }
+    }
+    .imgBox3 {
+      .imgItem {
+        height: 300px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        &:last-child {
+          border-radius: 20px;
+          padding: 15px;
+          h5 {
+            font-size: 30px;
+            line-height: 35px;
+          }
+        }
+        img {
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+  .contactSec {
+    padding: 120px 0px 0px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+  .abtSection {
+    padding: 100px 0px 0px;
+    h1 {
+      font-size: 35px;
+      line-height: 40px;
+      margin-bottom: 10px;
+    }
+    .imgBox1 {
+      .imgItem {
+        height: 240px;
+        margin-bottom: 20px;
+        p {
+          font-size: 20px;
+          line-height: 26px;
+          span {
+            font-size: 35px;
+            line-height: 40px;
+          }
+        }
+        &:first-child {
+          border-radius: 15px;
+          padding: 15px;
+          height: 280px;
+          .icon {
+            height: 45px;
+            width: 45px;
+            border-radius: 10px;
+            svg {
+              height: 28px;
+            }
+          }
+        }
+        img {
+          border-radius: 15px;
+        }
+      }
+    }
+    .imgBox2 {
+      .imgItem {
+        margin-bottom: 20px;
+        height: 300px;
+        &:first-child {
+          height: 220px;
+        }
+        img {
+          border-radius: 15px;
+        }
+      }
+    }
+    .imgBox3 {
+      .imgItem {
+        height: 260px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        &:last-child {
+          border-radius: 15px;
+          padding: 15px;
+          h5 {
+            font-size: 25px;
+            line-height: 30px;
+          }
+        }
+        img {
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+  .contactSec {
+    padding: 100px 0px 0px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .abtSection {
+    padding: 100px 0px 0px;
+    h1 {
+      font-size: 32px;
+      line-height: 35px;
+      margin-bottom: 10px;
+    }
+    .imgBox1 {
+      .imgItem {
+        height: 220px;
+        margin-bottom: 20px;
+        p {
+          font-size: 18px;
+          line-height: 22px;
+          span {
+            font-size: 30px;
+            line-height: 35px;
+          }
+        }
+        &:first-child {
+          border-radius: 15px;
+          padding: 15px;
+          height: 240px;
+          .icon {
+            height: 45px;
+            width: 45px;
+            border-radius: 10px;
+            svg {
+              height: 22px;
+            }
+          }
+        }
+        img {
+          border-radius: 15px;
+        }
+      }
+    }
+    .imgBox2 {
+      .imgItem {
+        margin-bottom: 20px;
+        height: 260px;
+        &:first-child {
+          height: 200px;
+        }
+        img {
+          border-radius: 15px;
+        }
+      }
+    }
+    .imgBox3 {
+      .imgItem {
+        height: 230px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        &:last-child {
+          border-radius: 15px;
+          padding: 15px;
+          h5 {
+            font-size: 20px;
+            line-height: 25px;
+          }
+        }
+        img {
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+  .contactSec {
+    padding: 100px 0px 0px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .abtSection {
+    padding: 100px 0px 0px;
+    h1 {
+      font-size: 32px;
+      line-height: 35px;
+      margin-bottom: 10px;
+    }
+    .imgBox1 {
+      .imgItem {
+        height: 220px;
+        margin-bottom: 20px;
+        p {
+          font-size: 18px;
+          line-height: 22px;
+          span {
+            font-size: 30px;
+            line-height: 35px;
+          }
+        }
+        &:first-child {
+          border-radius: 15px;
+          padding: 15px;
+          height: 240px;
+          .icon {
+            height: 45px;
+            width: 45px;
+            border-radius: 10px;
+            svg {
+              height: 22px;
+            }
+          }
+        }
+        img {
+          border-radius: 15px;
+        }
+      }
+    }
+    .imgBox2 {
+      .imgItem {
+        margin-bottom: 20px;
+        height: 260px;
+        &:first-child {
+          height: 200px;
+        }
+        img {
+          border-radius: 15px;
+        }
+      }
+    }
+    .imgBox3 {
+      .imgItem {
+        height: 230px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        &:last-child {
+          border-radius: 15px;
+          padding: 15px;
+          h5 {
+            font-size: 40px;
+            line-height: 45px;
+          }
+        }
+        img {
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+  .contactSec {
+    padding: 100px 0px 0px;
+  }
+}

@@ -1,0 +1,324 @@
+.scheduleSec {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  position: relative;
+  margin-top: 100px;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.83);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  .scheduleBox {
+    position: relative;
+    z-index: 9;
+    h2 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 94px;
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+    p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 30px;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+    .flexButton {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+      .flexBtn {
+        background: #ff0004;
+        border-radius: 10px;
+        align-items: center;
+        width: 200px;
+        height: 56px;
+        color: #fff;
+        border: 1px solid #ff0004;
+        transition: background 0.3s;
+        a {
+          color: #fff;
+          border-radius: 10px;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          width: 100%;
+          height: 100%;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 35px;
+        }
+        &:last-child {
+          border: 1px solid #fff;
+          border-radius: 10px;
+          background: transparent;
+          color: #fff;
+          transition: background 0.3s;
+          a {
+            color: #fff;
+          }
+          &:hover {
+            background: #ff0004;
+            border: 1px solid #ff0004;
+            color: #fff;
+            transition: background 0.3s;
+            a {
+              color: #fff;
+            }
+          }
+        }
+        &:hover {
+          background: #fff;
+          border: 1px solid #000;
+          color: #000;
+          transition: background 0.3s;
+          a {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .scheduleSec {
+    height: 600px;
+    margin-top: 80px;
+
+    .scheduleBox {
+      h2 {
+        font-size: 70px;
+        line-height: 75px;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 20px;
+      }
+      .flexButton {
+        gap: 18px;
+        margin-top: 25px;
+        .flexBtn {
+          width: 200px;
+          height: 52px;
+
+          a {
+            font-size: 18px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+  .scheduleSec {
+    height: 550px;
+    margin-top: 70px;
+
+    .scheduleBox {
+      h2 {
+        font-size: 60px;
+        line-height: 65px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 15px;
+      }
+      .flexButton {
+        gap: 18px;
+        margin-top: 20px;
+        .flexBtn {
+          width: 180px;
+          height: 48px;
+
+          a {
+            font-size: 17px;
+            line-height: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+  .scheduleSec {
+    height: 500px;
+    margin-top: 60px;
+
+    .scheduleBox {
+      h2 {
+        font-size: 55px;
+        line-height: 60px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 10px;
+      }
+      .flexButton {
+        gap: 15px;
+        margin-top: 20px;
+        .flexBtn {
+          width: 160px;
+          height: 45px;
+
+          a {
+            font-size: 16px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  .scheduleSec {
+    height: 450px;
+    margin-top: 50px;
+
+    .scheduleBox {
+      h2 {
+        font-size: 50px;
+        line-height: 55px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 17px;
+        line-height: 22px;
+        margin-bottom: 10px;
+      }
+      .flexButton {
+        gap: 10px;
+        margin-top: 20px;
+        .flexBtn {
+          width: 160px;
+          height: 42px;
+
+          a {
+            font-size: 15px;
+            line-height: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+  .scheduleSec {
+    height: 450px;
+    margin-top: 50px;
+
+    .scheduleBox {
+      h2 {
+        font-size: 45px;
+        line-height: 50px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 10px;
+      }
+      .flexButton {
+        gap: 10px;
+        margin-top: 20px;
+        .flexBtn {
+          width: 160px;
+          height: 42px;
+
+          a {
+            font-size: 15px;
+            line-height: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .scheduleSec {
+    height: 350px;
+    margin-top: 40px;
+
+    .scheduleBox {
+      h2 {
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+      .flexButton {
+        gap: 10px;
+        margin-top: 20px;
+        .flexBtn {
+          width: 160px;
+          height: 40px;
+
+          a {
+            font-size: 15px;
+            line-height: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .scheduleSec {
+    height: auto;
+    padding: 50px 0px;
+    margin-top: 40px;
+
+    .scheduleBox {
+      h2 {
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+      .flexButton {
+        gap: 10px;
+        margin-top: 20px;
+        .flexBtn {
+          width: 140px;
+          border-radius: 5px;
+          height: 40px;
+
+          a {
+            font-size: 15px;
+            line-height: 15px;
+          }
+          &:last-child {
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}

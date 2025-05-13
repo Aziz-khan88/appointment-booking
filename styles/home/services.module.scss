@@ -1,0 +1,423 @@
+.servicesSec {
+  height: 800px;
+  position: relative;
+  &:after {
+    content: "";
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+  }
+  img {
+    object-fit: cover;
+    object-position: center center;
+  }
+  .titleBox {
+    position: relative;
+    z-index: 1;
+    .subTitle {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 36px;
+      text-transform: uppercase;
+      color: #ff0004;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+      color: rgb(255, 255, 255, 0.6);
+      margin-bottom: 20px;
+    }
+  }
+  .listingBox {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+    h4 {
+      max-width: 280px;
+      position: relative;
+      svg {
+        display: flex;
+        margin-top: 0px;
+        position: absolute;
+        right: 0px;
+        bottom: -12px;
+      }
+    }
+    ul {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 50px;
+      li {
+        flex: 0 0 120px;
+        padding: 0px 20px;
+        margin-right: 10px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        .servicesItem {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 26px;
+          line-height: 42px;
+          color: #ffffff;
+          margin-right: 50px;
+          padding: 15px 0px;
+
+          span {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #fff;
+            display: block;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 16px;
+            color: #ffffff;
+          }
+        }
+        &:hover {
+          background: rgba(255, 255, 255, 0.2);
+          border: 1px solid #ffffff;
+          backdrop-filter: blur(5px);
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .servicesSec {
+    height: 600px;
+    .titleBox {
+      .subTitle {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 17px;
+        line-height: 22px;
+        margin-bottom: 20px;
+      }
+    }
+    .listingBox {
+      margin-bottom: 30px;
+      h4 {
+        max-width: 280px;
+        position: relative;
+        svg {
+          bottom: -15px;
+        }
+      }
+      ul {
+        margin-top: 45px;
+        li {
+          flex: 0 0 100px;
+          padding: 0px 20px;
+          .servicesItem {
+            font-size: 22px;
+            line-height: 40px;
+            margin-right: 40px;
+            padding: 15px 0px;
+
+            span {
+              font-size: 16px;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+  .servicesSec {
+    height: 600px;
+    .titleBox {
+      .subTitle {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 17px;
+        line-height: 22px;
+        margin-bottom: 20px;
+      }
+    }
+    .listingBox {
+      margin-bottom: 30px;
+      h4 {
+        max-width: 250px;
+        position: relative;
+        svg {
+          bottom: -15px;
+        }
+      }
+      ul {
+        margin-top: 30px;
+        li {
+          flex: 0 0 100px;
+          padding: 0px 15px;
+          .servicesItem {
+            font-size: 20px;
+            line-height: 40px;
+            margin-right: 30px;
+            padding: 15px 0px;
+
+            span {
+              font-size: 16px;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+  .servicesSec {
+    height: 600px;
+    .titleBox {
+      .subTitle {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 17px;
+        line-height: 22px;
+        margin-bottom: 20px;
+      }
+    }
+    .listingBox {
+      margin-bottom: 30px;
+      h4 {
+        max-width: 250px;
+        position: relative;
+        svg {
+          bottom: -15px;
+        }
+      }
+      ul {
+        margin-top: 30px;
+        li {
+          flex: 0 0 100px;
+          padding: 0px 15px;
+          .servicesItem {
+            font-size: 20px;
+            line-height: 40px;
+            margin-right: 30px;
+            padding: 15px 0px;
+
+            span {
+              font-size: 16px;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  .servicesSec {
+    height: 600px;
+    .titleBox {
+      .subTitle {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 20px;
+      }
+    }
+    .listingBox {
+      margin-bottom: 30px;
+      h4 {
+        max-width: 200px;
+        svg {
+          bottom: -20px;
+        }
+      }
+      ul {
+        margin-top: 30px;
+        li {
+          flex: 0 0 90px;
+          padding: 0px 10px;
+          .servicesItem {
+            font-size: 20px;
+            line-height: 35px;
+            margin-right: 30px;
+            padding: 15px 0px;
+
+            span {
+              font-size: 16px;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+  .servicesSec {
+    height: auto;
+    padding: 50px 0px;
+    .titleBox {
+      .subTitle {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 20px;
+      }
+    }
+    .listingBox {
+      margin-bottom: 0px;
+      margin-top: 30px;
+      h4 {
+        max-width: 200px;
+        svg {
+          bottom: -20px;
+        }
+      }
+      ul {
+        margin-top: 30px;
+        li {
+          flex: 0 0 90px;
+          padding: 0px 10px;
+          .servicesItem {
+            font-size: 20px;
+            line-height: 35px;
+            margin-right: 30px;
+            padding: 15px 0px;
+
+            span {
+              font-size: 16px;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .servicesSec {
+    height: auto;
+    padding: 50px 0px;
+    .titleBox {
+      .subTitle {
+        font-size: 19px;
+        line-height: 22px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 20px;
+      }
+    }
+    .listingBox {
+      margin-bottom: 0px;
+      margin-top: 30px;
+      h4 {
+        max-width: 200px;
+        svg {
+          bottom: -20px;
+        }
+      }
+      ul {
+        margin-top: 30px;
+        li {
+          flex: 0 0 90px;
+          padding: 0px 10px;
+          .servicesItem {
+            font-size: 20px;
+            line-height: 35px;
+            margin-right: 30px;
+            padding: 15px 0px;
+
+            span {
+              font-size: 16px;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .servicesSec {
+    height: auto;
+    padding: 30px 0px;
+    .titleBox {
+      .subTitle {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 20px;
+      }
+    }
+    .listingBox {
+      margin-bottom: 0px;
+      margin-top: 30px;
+      h4 {
+        max-width: 200px;
+        svg {
+          bottom: -20px;
+        }
+      }
+      ul {
+        margin-top: 30px;
+        flex-wrap: wrap;
+        li {
+          flex: 0 0 45%;
+          padding: 0px 10px;
+          .servicesItem {
+            font-size: 20px;
+            line-height: 35px;
+            margin-right: 30px;
+            padding: 15px 0px;
+
+            span {
+              font-size: 16px;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,597 @@
+.headerSec {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background: #000;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(22px);
+  .mainLogo {
+    svg {
+      height: 45px;
+      width: auto;
+    }
+  }
+  .menuIcon {
+    display: none;
+  }
+  .navigationMenu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    li {
+      height: 100%;
+      a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        color: #fff;
+        display: block;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 20px;
+        transition: color 0.3s ease, font-weight 0.3s ease;
+        &:hover {
+          color: #ff0004;
+          transition: color 0.3s ease, font-weight 0.3s ease;
+        }
+      }
+      &:last-child {
+        height: auto;
+        a {
+          height: 55px;
+          background: #ff0004;
+          border-radius: 10px;
+          transition: background 0.3s ease, font-weight 0.3s ease;
+          width: 210px;
+          margin: 0px 0px 0px 20px;
+          &:hover {
+            background: #fff;
+            color: #ff0004;
+            transition: background 0.3s ease, font-weight 0.3s ease;
+          }
+        }
+      }
+      .megeMenu {
+        background: #fff;
+        max-width: 500px;
+        position: absolute;
+        border-radius: 14px;
+        padding: 25px;
+        display: none;
+        .menuList {
+          padding: 0px;
+          margin: 0px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          .menuItem {
+            flex: 0 0 50%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 60px;
+            margin-bottom: 5px;
+            svg {
+              width: 30px;
+              height: auto;
+              margin-right: 20px;
+            }
+            a {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 20px;
+              color: #000000;
+              margin: 0px;
+            }
+            &:hover {
+              svg {
+                path {
+                  fill: #000;
+                }
+              }
+              a {
+                color: #ff0004;
+              }
+            }
+          }
+        }
+      }
+      &:hover {
+        .megeMenu {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .headerSec {
+    height: 80px;
+    .navigationMenu {
+      height: 80px;
+      li {
+        a {
+          font-size: 18px;
+          line-height: 22px;
+          margin: 0px 20px;
+        }
+        &:last-child {
+          a {
+            height: 50px;
+            width: 200px;
+            margin: 0px 0px 0px 20px;
+          }
+        }
+        .megeMenu {
+          max-width: 500px;
+          padding: 22px;
+          .menuList {
+            .menuItem {
+              height: 60px;
+              margin-bottom: 5px;
+              svg {
+                width: 28px;
+                margin-right: 15px;
+              }
+              a {
+                font-size: 18px;
+                line-height: 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+  .headerSec {
+    height: 70px;
+    .navigationMenu {
+      height: 70px;
+      li {
+        a {
+          font-size: 17px;
+          line-height: 22px;
+          margin: 0px 20px;
+        }
+        &:last-child {
+          a {
+            height: 50px;
+            width: 200px;
+            margin: 0px 0px 0px 20px;
+          }
+        }
+        .megeMenu {
+          max-width: 450px;
+          padding: 20px;
+          .menuList {
+            .menuItem {
+              height: 60px;
+              margin-bottom: 5px;
+              svg {
+                width: 26px;
+                margin-right: 15px;
+              }
+              a {
+                font-size: 17px;
+                line-height: 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+  .headerSec {
+    height: 65px;
+    .navigationMenu {
+      height: 65px;
+      li {
+        a {
+          font-size: 16px;
+          line-height: 20px;
+          margin: 0px 20px;
+        }
+        &:last-child {
+          a {
+            height: 50px;
+            width: 200px;
+            margin: 0px 0px 0px 20px;
+          }
+        }
+        .megeMenu {
+          max-width: 400px;
+          padding: 20px;
+          .menuList {
+            .menuItem {
+              height: 55px;
+              margin-bottom: 5px;
+              svg {
+                width: 22px;
+                margin-right: 15px;
+              }
+              a {
+                font-size: 16px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  .headerSec {
+    height: 65px;
+    .mainLogo {
+      svg {
+        height: 40px;
+      }
+    }
+    .navigationMenu {
+      height: 65px;
+      li {
+        a {
+          font-size: 15px;
+          line-height: 20px;
+          margin: 0px 15px;
+        }
+        &:last-child {
+          a {
+            height: 50px;
+            width: 150px;
+            margin: 0px 0px 0px 15px;
+          }
+        }
+        .megeMenu {
+          max-width: 380px;
+          padding: 15px;
+          .menuList {
+            .menuItem {
+              height: 50px;
+              margin-bottom: 5px;
+              svg {
+                width: 20px;
+                margin-right: 12px;
+              }
+              a {
+                font-size: 15px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+  .headerSec {
+    height: 65px;
+    .mainLogo {
+      svg {
+        height: 30px;
+      }
+    }
+    .navigationMenu {
+      height: 65px;
+      li {
+        a {
+          font-size: 14px;
+          line-height: 20px;
+          margin: 0px 10px;
+        }
+        &:last-child {
+          a {
+            height: 45px;
+            width: 140px;
+            margin: 0px 0px 0px 10px;
+          }
+        }
+        .megeMenu {
+          max-width: 380px;
+          padding: 15px;
+
+          .menuList {
+            .menuItem {
+              height: 50px;
+              margin-bottom: 5px;
+              svg {
+                width: 20px;
+                margin-right: 12px;
+              }
+              a {
+                font-size: 14px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .headerSec {
+    height: 65px;
+    .mainLogo {
+      svg {
+        height: 30px;
+      }
+    }
+    .menuIcon {
+      text-align: right;
+      display: block;
+      svg {
+        height: 25px;
+        width: auto;
+      }
+    }
+    .navigationMenu {
+      position: fixed;
+      width: 300px;
+      height: calc(100vh - 65px);
+      top: 65px;
+      right: -300px;
+      transition: width 0.5s, opacity 0.5s;
+      z-index: 9;
+      opacity: 0;
+      overflow: auto;
+      animation: slideFromTop 0.5s forwards;
+      border: 0px;
+      border-radius: 0px;
+      display: flex;
+      padding: 15px;
+      background: #000;
+      &.active {
+        right: 0px;
+        opacity: 1;
+        animation: slideFromTop 0.5s forwards;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        li {
+          height: auto;
+          width: 100%;
+          display: block;
+          a {
+            line-height: normal;
+            padding: 0px 15px;
+            font-size: 18px;
+            font-size: 16px;
+            height: 45px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            &:hover {
+              color: #ff0004;
+              background: rgb(255, 255, 255, 0.2);
+            }
+          }
+          &:last-child {
+            a {
+              background: #fff;
+              color: #ff0004;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      li {
+        a {
+          font-size: 14px;
+          line-height: 20px;
+          margin: 0px 10px;
+          height: auto;
+          margin: 0px;
+          text-align: left;
+          display: block;
+        }
+        &:last-child {
+          margin-top: 10px;
+          a {
+            height: 45px;
+            width: auto;
+            margin: 0px 0px 0px 0px;
+            font-size: 16px;
+            padding: 0px 20px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .megeMenu {
+          max-width: 100%;
+          margin-top: 10px;
+          padding: 0px 0px;
+          position: unset;
+          background: transparent;
+          .menuList {
+            .menuItem {
+              padding: 0px 10px;
+              height: auto;
+              margin-bottom: 5px;
+              flex: 0 0 100%;
+              border-bottom: 1px solid #fff;
+              border-radius: 2px;
+              svg {
+                width: 20px;
+                margin-right: 15px;
+                path {
+                  fill: #fff;
+                }
+              }
+              a {
+                font-size: 15px;
+                line-height: 20px;
+                padding: 0px;
+                color: #fff;
+                font-weight: 600;
+                background: transparent;
+              }
+              &:hover {
+                svg {
+                  path {
+                    fill: #ff0004;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .headerSec {
+    height: 65px;
+    .mainLogo {
+      svg {
+        height: 30px;
+      }
+    }
+    .menuIcon {
+      text-align: right;
+      display: block;
+      svg {
+        height: 25px;
+        width: auto;
+      }
+    }
+    .navigationMenu {
+      position: fixed;
+      width: 300px;
+      height: calc(100vh - 65px);
+      top: 65px;
+      right: -300px;
+      transition: width 0.5s, opacity 0.5s;
+      z-index: 9;
+      opacity: 0;
+      overflow: auto;
+      animation: slideFromTop 0.5s forwards;
+      border: 0px;
+      border-radius: 0px;
+      display: flex;
+      padding: 15px;
+      background: #000;
+      &.active {
+        right: 0px;
+        opacity: 1;
+        animation: slideFromTop 0.5s forwards;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        li {
+          height: auto;
+          width: 100%;
+          display: block;
+          a {
+            line-height: normal;
+            padding: 0px 15px;
+            font-size: 18px;
+            font-size: 16px;
+            height: 45px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            &:hover {
+              color: #ff0004;
+              background: rgb(255, 255, 255, 0.2);
+            }
+          }
+          &:last-child {
+            a {
+              background: #fff;
+              color: #ff0004;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      li {
+        a {
+          font-size: 14px;
+          line-height: 20px;
+          margin: 0px 10px;
+          height: auto;
+          margin: 0px;
+          text-align: left;
+          display: block;
+        }
+        &:last-child {
+          margin-top: 10px;
+          a {
+            height: 45px;
+            width: auto;
+            margin: 0px 0px 0px 0px;
+            font-size: 16px;
+            padding: 0px 20px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .megeMenu {
+          max-width: 100%;
+          margin-top: 10px;
+          padding: 0px 0px;
+          position: unset;
+          background: transparent;
+          .menuList {
+            .menuItem {
+              padding: 0px 10px;
+              height: auto;
+              margin-bottom: 5px;
+              flex: 0 0 100%;
+              border-bottom: 1px solid #fff;
+              border-radius: 2px;
+              svg {
+                width: 20px;
+                margin-right: 15px;
+                path {
+                  fill: #fff;
+                }
+              }
+              a {
+                font-size: 15px;
+                line-height: 20px;
+                padding: 0px;
+                color: #fff;
+                font-weight: 600;
+                background: transparent;
+              }
+              &:hover {
+                svg {
+                  path {
+                    fill: #ff0004;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
