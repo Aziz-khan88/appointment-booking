@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "@/styles/home/services.module.scss";
 import Link from "next/link";
 import { Col, Container, Row } from "react-bootstrap";
@@ -39,6 +39,15 @@ const ServiceData = [
 
 const Services = () => {
     const [activeIndex, setActiveIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActiveIndex((prevIndex) => (prevIndex + 1) % ServiceData.length);
+        }, 4000);
+
+        return () => clearInterval(interval);
+    }, []);
+
     const activeService = ServiceData[activeIndex];
 
     return (
@@ -60,8 +69,8 @@ const Services = () => {
                             <h4>Tailored for <br />Every Industry <HeadingSmall /></h4>
                             <ul>
                                 {ServiceData.map((item, index) => (
-                                    <li key={index} onClick={() => setActiveIndex(index)}>
-                                        <div className={`${styles.servicesItem} ${index === activeIndex ? styles.active : ''}`}>
+                                    <li key={index} onClick={() => setActiveIndex(index)} className={`${index === activeIndex ? styles.active : ''}`}>
+                                        <div className={`${styles.servicesItem} `}>
                                             <span>{`0${index + 1}.`}</span>{item.category}
                                         </div>
                                     </li>

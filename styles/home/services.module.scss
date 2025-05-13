@@ -84,6 +84,13 @@
             color: #ffffff;
           }
         }
+        &.active {
+          background: rgba(255, 255, 255, 0.2);
+          border: 1px solid #ffffff;
+          backdrop-filter: blur(5px);
+          border-radius: 10px;
+        }
+
         &:hover {
           background: rgba(255, 255, 255, 0.2);
           border: 1px solid #ffffff;
