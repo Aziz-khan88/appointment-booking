@@ -12,7 +12,7 @@ const Work = () => {
                         <div className={styles.workBox}>
                             <Row className={styles.workBoxWhite}>
                                 <Col md={6} lg={5} className="my-auto">
-                                    <div className={styles.subtitle}>How its work</div>
+                                    <div className="subtitle">How its work</div>
                                     <h2>Scheduling Made Simple in 3 Easy Steps</h2>
                                     <p>Set your availability, share your link, and let clients book in seconds its that easy!</p>
                                     <div className={styles.flexButton}>

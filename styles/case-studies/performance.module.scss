@@ -1,0 +1,54 @@
+.performanceSec {
+  .performanceBox {
+    background: #000000;
+    border-radius: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    .performanceItem {
+      flex: 0 0 21.66%;
+      border-right: 1px solid rgb(217 217 217 / 30%);
+      padding-left: 25px;
+      &:first-child {
+        flex: 0 0 35%;
+        padding: 0px 25px 0px 0px;
+        margin: 0px;
+        h4 {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 42px;
+          line-height: 46px;
+          letter-spacing: -2px;
+          color: #ffffff;
+          span {
+            color: #ff0004;
+          }
+        }
+      }
+      &:last-child {
+        border-right: 0px;
+      }
+      .perftitle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 70px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        span {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: rgba(255, 255, 255, 0.6);
+          display: block;
+        }
+      }
+    }
+  }
+}

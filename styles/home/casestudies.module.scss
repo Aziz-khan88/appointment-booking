@@ -1,0 +1,121 @@
+.caseStudiesSec {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  position: relative;
+  &::before {
+    content: "";
+    background: linear-gradient(270deg, rgba(12, 18, 49, 0.8) 0%, #0c1231 100%);
+    opacity: 0.9;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  .embla {
+    .embla__viewport {
+      overflow: hidden;
+      .embla__container {
+        display: flex;
+        touch-action: pan-y pinch-zoom;
+        .embla__slide {
+          transform: translate3d(0, 0, 0);
+          flex: 0 0 100%;
+          min-width: 0;
+          position: relative;
+          .caseContainer {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .caseContent {
+              flex: 0 0 50%;
+              h2 {
+                color: #fff;
+                margin-bottom: 10px;
+              }
+              p {
+                color: #fff;
+              }
+              a {
+                background: #ff0004;
+                border-radius: 10px;
+                min-width: 210px;
+                width: auto;
+                height: 55px;
+                margin: 10px 0 0 0px;
+                transition: background 0.3s, font-weight 0.3s;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 35px;
+                color: #ffffff;
+                padding: 0px 25px;
+                &:hover {
+                  background: #ffffff;
+                  transition: background 0.3s, font-weight 0.3s;
+                  color: #ff0004;
+                }
+              }
+            }
+            .caseImage {
+              flex: 0 0 50%;
+              img {
+                padding: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .embla_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 30px;
+    gap: 10px;
+
+    div {
+      height: 40px;
+      width: 40px;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border: 1px solid #fff;
+
+      svg {
+        height: 16px;
+        path {
+          fill: #fff;
+        }
+      }
+
+      &:hover {
+        transition: 0.3s linear;
+        border: 1px solid #ff0004;
+        background: #ff0004;
+        svg {
+          path {
+            fill: #fff;
+          }
+        }
+      }
+
+      &.embla_prev {
+        svg {
+          transform: rotate(-180deg);
+        }
+      }
+    }
+  }
+}

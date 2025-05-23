@@ -6,6 +6,15 @@
   z-index: 99;
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(22px);
+  &.active {
+    .mainLogo {
+      svg {
+        path {
+          fill: #ff0004;
+        }
+      }
+    }
+  }
   .mainLogo {
     svg {
       height: 45px;

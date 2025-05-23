@@ -57,7 +57,7 @@ const Faqs = () => {
                         <div className={styles.faqsBox}>
                             <Row className={styles.faqsBoxWhite}>
                                 <Col md={12} lg={10} xl={8} className="m-auto">
-                                    <div className={styles.subtitle}>{data.subtitle}</div>
+                                    <div className="subtitle center">{data.subtitle}</div>
                                     <h2>{data.title}</h2>
                                     <p>{data.txt}</p>
                                 </Col>

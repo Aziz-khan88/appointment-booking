@@ -7,72 +7,14 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Link from "next/link"
 import Autoplay from 'embla-carousel-autoplay'
 
-const Business = [
-    {
-        title: "Calendar Management",
-        txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
-        icon: <Calendar />
-    },
-    {
-        title: "Online Booking",
-        txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
-        icon: <Booking />
-    },
-    {
-        title: "Staff Management",
-        txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
-        icon: <Staff />
-    },
-    {
-        title: "Notifications & Reminders",
-        txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
-        icon: <Notifications />
-    }
-    ,
-    {
-        title: "Reporting & Analytics",
-        txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
-        icon: <Reporting />
-    }
 
-]
-
-const Clients = [
-    {
-        title: "Calendar Management",
-        txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
-        icon: <Calendar />
-    },
-    {
-        title: "Online Booking",
-        txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
-        icon: <Booking />
-    },
-    {
-        title: "Staff Management",
-        txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
-        icon: <Staff />
-    },
-    {
-        title: "Notifications & Reminders",
-        txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
-        icon: <Notifications />
-    }
-    ,
-    {
-        title: "Reporting & Analytics",
-        txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
-        icon: <Reporting />
-    }
-
-]
 const OPTIONS = { loop: true, dragFree: true }
 
 
-const Feature = () => {
+const Feature = ({ data }) => {
     const [activeTab, setActiveTab] = useState("Business");
     const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS, [Autoplay()]);
-    const tabData = activeTab === "Business" ? Business : Clients;
+    const tabData = activeTab === "Business" ? data.Business : data.Clients;
     return (
         <section className={`p-100 ${styles.featureSec}`}>
             <Container>
@@ -104,7 +46,7 @@ const Feature = () => {
                             <div className={styles.embla}>
                                 <div className={styles.embla__viewport} ref={emblaRef}>
                                     <div className={styles.embla__container}>
-                                        {tabData.map((item, index) => (
+                                        {tabData?.map((item, index) => (
                                             <div className={styles.embla__slide} key={index}>
                                                 <div className={styles.featureItem}>
                                                     <div className={styles.featureIcon}>

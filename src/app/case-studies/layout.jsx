@@ -8,14 +8,14 @@ export const metadata = {
     openGraph: {
         title: "",
         description: "",
-        url: '/contact-us',
+        url: '/about-us',
         siteName: "Slotify",
         locale: 'en_US',
         type: 'website',
         images: "",
     },
     //===== Canonical =====
-    alternates: { canonical: '/contact-us' },
+    alternates: { canonical: '/about-us' },
 }
 
 

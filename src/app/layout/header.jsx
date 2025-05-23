@@ -19,8 +19,21 @@ const Header = () => {
     const handleMenuToggle = () => {
         setMenuActive(!menuActive)
     }
+
+
+    const [scrolled, setScrolled] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+            const isScrolled = window.scrollY > 10;
+            setScrolled(isScrolled);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     return (
-        <section className={styles.headerSec}>
+        <section className={`${styles.headerSec} ${scrolled ? styles.active : ""}`}>
             <Container className="h-100">
                 <Row className="h-100">
                     <Col xs={6} md={3} lg={4} className="my-auto">
@@ -53,23 +66,23 @@ const Header = () => {
                                         </div>
                                         <div className={styles.menuItem} onClick={handleMenuToggle}>
                                             <GarageIcon />
-                                            <Link href="#">Garage</Link>
+                                            <Link href="/auto">Auto</Link>
                                         </div>
                                         <div className={styles.menuItem} onClick={handleMenuToggle}>
                                             <HospitalIcon />
-                                            <Link href="#">Hospital</Link>
+                                            <Link href="/dentist">Dentist</Link>
                                         </div>
                                         <div className={styles.menuItem} onClick={handleMenuToggle}>
                                             <LawIcon />
-                                            <Link href="#">Law</Link>
+                                            <Link href="/law">Law</Link>
                                         </div>
                                         <div className={styles.menuItem} onClick={handleMenuToggle}>
                                             <GymIcon />
-                                            <Link href="#">Gym</Link>
+                                            <Link href="/fitness">Fitness</Link>
                                         </div>
                                         <div className={styles.menuItem} onClick={handleMenuToggle}>
                                             <EducationIcon />
-                                            <Link href="#">Education</Link>
+                                            <Link href="/education">Education</Link>
                                         </div>
                                     </div>
                                 </div>

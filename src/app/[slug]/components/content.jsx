@@ -18,11 +18,11 @@ const Content = ({ data, btn, alternet }) => {
                         {btn === false ?
                             ""
                             :
-                            <div className={styles.flexButton}>
-                                <div className={styles.flexBtn}>
+                            <div className="flexButton">
+                                <div className="flexBtn">
                                     <Link href="#">Start Free Trial</Link>
                                 </div>
-                                <div className={styles.flexBtn}>
+                                <div className="flexBtn">
                                     <Link href="#">Book a Demo</Link>
                                 </div>
                             </div>
