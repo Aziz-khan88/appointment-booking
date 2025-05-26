@@ -14,3 +14,18 @@
     margin: auto;
   }
 }
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .contentSec {
+    .imgBox {
+      margin-bottom: 30px;
+    }
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .contentSec {
+    .imgBox {
+      margin-bottom: 30px;
+    }
+  }
+}

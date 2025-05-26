@@ -67,8 +67,10 @@
             }
             .caseImage {
               flex: 0 0 50%;
+              text-align: right;
               img {
                 padding: 20px;
+                max-width: 90%;
               }
             }
           }
@@ -114,6 +116,325 @@
       &.embla_prev {
         svg {
           transform: rotate(-180deg);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .caseStudiesSec {
+    height: 650px;
+    .embla {
+      .embla__viewport {
+        .embla__container {
+          .embla__slide {
+            .caseContainer {
+              .caseContent {
+                flex: 0 0 50%;
+                a {
+                  min-width: 210px;
+                  height: 50px;
+                  font-size: 18px;
+                  line-height: 22px;
+                  padding: 0px 25px;
+                }
+              }
+              .caseImage {
+                flex: 0 0 50%;
+                img {
+                  padding: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .embla_container {
+      margin-top: 30px;
+      gap: 10px;
+
+      div {
+        height: 40px;
+        width: 40px;
+
+        svg {
+          height: 16px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+  .caseStudiesSec {
+    height: 650px;
+    .embla {
+      .embla__viewport {
+        .embla__container {
+          .embla__slide {
+            .caseContainer {
+              .caseContent {
+                flex: 0 0 50%;
+                a {
+                  min-width: 210px;
+                  height: 50px;
+                  font-size: 18px;
+                  line-height: 22px;
+                  padding: 0px 25px;
+                }
+              }
+              .caseImage {
+                flex: 0 0 50%;
+                img {
+                  padding: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .embla_container {
+      margin-top: 25px;
+      gap: 10px;
+
+      div {
+        height: 40px;
+        width: 40px;
+
+        svg {
+          height: 16px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+  .caseStudiesSec {
+    height: 520px;
+    .embla {
+      .embla__viewport {
+        .embla__container {
+          .embla__slide {
+            .caseContainer {
+              .caseContent {
+                flex: 0 0 50%;
+                a {
+                  min-width: 210px;
+                  height: 50px;
+                  font-size: 18px;
+                  line-height: 22px;
+                  padding: 0px 25px;
+                }
+              }
+              .caseImage {
+                flex: 0 0 50%;
+
+                img {
+                  padding: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .embla_container {
+      margin-top: 25px;
+      gap: 10px;
+
+      div {
+        height: 40px;
+        width: 40px;
+
+        svg {
+          height: 16px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  .caseStudiesSec {
+    height: 520px;
+    .embla {
+      .embla__viewport {
+        .embla__container {
+          .embla__slide {
+            .caseContainer {
+              .caseContent {
+                flex: 0 0 50%;
+                a {
+                  min-width: 200px;
+                  height: 50px;
+                  font-size: 16px;
+                  line-height: 20px;
+                  padding: 0px 25px;
+                }
+              }
+              .caseImage {
+                flex: 0 0 50%;
+
+                img {
+                  padding: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .embla_container {
+      margin-top: 25px;
+      gap: 10px;
+
+      div {
+        height: 35px;
+        width: 35px;
+
+        svg {
+          height: 14px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+  .caseStudiesSec {
+    height: 100%;
+    padding: 40px 0px;
+    .embla {
+      .embla__viewport {
+        .embla__container {
+          .embla__slide {
+            .caseContainer {
+              .caseContent {
+                flex: 0 0 50%;
+                a {
+                  min-width: 200px;
+                  height: 45px;
+                  font-size: 16px;
+                  line-height: 20px;
+                  padding: 0px 25px;
+                }
+              }
+              .caseImage {
+                flex: 0 0 50%;
+
+                img {
+                  padding: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .embla_container {
+      margin-top: 25px;
+      gap: 10px;
+
+      div {
+        height: 35px;
+        width: 35px;
+
+        svg {
+          height: 14px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .caseStudiesSec {
+    height: 100%;
+    padding: 40px 0px;
+    .embla {
+      .embla__viewport {
+        .embla__container {
+          .embla__slide {
+            .caseContainer {
+              .caseContent {
+                flex: 0 0 50%;
+                a {
+                  min-width: 200px;
+                  height: 45px;
+                  font-size: 16px;
+                  line-height: 20px;
+                  padding: 0px 25px;
+                }
+              }
+              .caseImage {
+                flex: 0 0 50%;
+
+                img {
+                  padding: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .embla_container {
+      margin-top: 25px;
+      gap: 10px;
+
+      div {
+        height: 35px;
+        width: 35px;
+
+        svg {
+          height: 14px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .caseStudiesSec {
+    height: 100%;
+    padding: 40px 0px;
+    .embla {
+      .embla__viewport {
+        .embla__container {
+          .embla__slide {
+            .caseContainer {
+              flex-wrap: wrap;
+              .caseContent {
+                flex: 0 0 100%;
+                a {
+                  min-width: 200px;
+                  height: 45px;
+                  font-size: 16px;
+                  line-height: 20px;
+                  padding: 0px 25px;
+                }
+              }
+              .caseImage {
+                flex: 0 0 100%;
+                margin-top: 20px;
+                text-align: center;
+                img {
+                  padding: 0px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .embla_container {
+      margin-top: 25px;
+      gap: 10px;
+
+      div {
+        height: 35px;
+        width: 35px;
+
+        svg {
+          height: 14px;
         }
       }
     }

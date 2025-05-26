@@ -21,7 +21,7 @@ const Banner = ({ data }) => {
                             </div>
                         </div>
                     </Col>
-                    <Col md={6} className="my-auto">
+                    <Col md={6} className="my-auto text-center">
                         <Image src={data.banner.bannerIMG} alt="ImgBG" width={970} height={760} />
                     </Col>
                 </Row>

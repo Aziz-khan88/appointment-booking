@@ -52,3 +52,218 @@
     }
   }
 }
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .performanceSec {
+    .performanceBox {
+      padding: 40px;
+      border-radius: 30px;
+      .performanceItem {
+        flex: 0 0 21.66%;
+        padding-left: 25px;
+        &:first-child {
+          flex: 0 0 35%;
+          padding: 0px 25px 0px 0px;
+          h4 {
+            font-size: 35px;
+            line-height: 40px;
+          }
+        }
+        .perftitle {
+          font-size: 55px;
+          line-height: 65px;
+
+          span {
+            font-size: 18px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+  .performanceSec {
+    .performanceBox {
+      padding: 40px;
+      border-radius: 25px;
+      .performanceItem {
+        flex: 0 0 21.66%;
+        padding-left: 20px;
+        &:first-child {
+          flex: 0 0 35%;
+          padding: 0px 20px 0px 0px;
+          h4 {
+            font-size: 32px;
+            line-height: 36px;
+          }
+        }
+        .perftitle {
+          font-size: 50px;
+          line-height: 60px;
+
+          span {
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+  .performanceSec {
+    .performanceBox {
+      padding: 40px;
+      border-radius: 25px;
+      .performanceItem {
+        flex: 0 0 21.66%;
+        padding-left: 20px;
+        &:first-child {
+          flex: 0 0 35%;
+          padding: 0px 20px 0px 0px;
+          h4 {
+            font-size: 32px;
+            line-height: 36px;
+          }
+        }
+        .perftitle {
+          font-size: 48px;
+          line-height: 55px;
+
+          span {
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  .performanceSec {
+    .performanceBox {
+      padding: 35px;
+      border-radius: 25px;
+      .performanceItem {
+        flex: 0 0 21.66%;
+        padding-left: 20px;
+        &:first-child {
+          flex: 0 0 35%;
+          padding: 0px 20px 0px 0px;
+          h4 {
+            font-size: 26px;
+            line-height: 30px;
+          }
+        }
+        .perftitle {
+          font-size: 35px;
+          line-height: 40px;
+
+          span {
+            font-size: 15px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+  .performanceSec {
+    .performanceBox {
+      padding: 30px;
+      border-radius: 20px;
+      .performanceItem {
+        flex: 0 0 21.66%;
+        padding-left: 15px;
+        &:first-child {
+          flex: 0 0 35%;
+          padding: 0px 15px 0px 0px;
+          h4 {
+            font-size: 22px;
+            line-height: 26px;
+          }
+        }
+        .perftitle {
+          font-size: 30px;
+          line-height: 40px;
+
+          span {
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .performanceSec {
+    .performanceBox {
+      padding: 30px;
+      border-radius: 20px;
+      .performanceItem {
+        flex: 0 0 21.66%;
+        padding-left: 15px;
+        &:first-child {
+          flex: 0 0 35%;
+          padding: 0px 15px 0px 0px;
+          h4 {
+            font-size: 22px;
+            line-height: 26px;
+          }
+        }
+        .perftitle {
+          font-size: 30px;
+          line-height: 40px;
+
+          span {
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .performanceSec {
+    .performanceBox {
+      padding: 20px;
+      border-radius: 10px;
+      flex-wrap: wrap;
+      .performanceItem {
+        flex: 0 0 100%;
+        text-align: center;
+        padding-left: 0px;
+        border-right: 0px;
+        border-bottom: 1px solid rgb(217 217 217 / 30%);
+        padding-bottom: 20px;
+        padding-top: 20px;
+        &:first-child {
+          flex: 0 0 100%;
+          padding: 10px 0px 10px 0px;
+          h4 {
+            font-size: 22px;
+            line-height: 26px;
+          }
+        }
+        &:last-child {
+          border-bottom: 0px;
+        }
+        .perftitle {
+          font-size: 30px;
+          line-height: 40px;
+          justify-content: center;
+          align-items: center;
+
+          span {
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+}
