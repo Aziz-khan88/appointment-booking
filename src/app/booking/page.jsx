@@ -3,7 +3,14 @@ import styles from "@/styles/booking/booking.module.scss";
 import { Col, Container, Row } from "react-bootstrap";
 import React, { useEffect, useState } from "react";
 import Calendar from "react-calendar";
-import { ArrowNew, CalendarIcon, CameraIcon, ClockIcon, HeadingBar, LocationIcon } from "@/src/app/app-constants";
+import {
+    ArrowNew,
+    CalendarIcon,
+    CameraIcon,
+    ClockIcon,
+    HeadingBar,
+    LocationIcon,
+} from "@/src/app/app-constants";
 
 const availableSlots = {
     "2025-05-28": ["9:00 AM - 9:20 AM", "1:00 PM - 1:40 PM", "3:30 PM - 4:30 PM"],
@@ -23,6 +30,7 @@ const Page = () => {
         email: "",
         phone: "",
     });
+    const [bookedSlots, setBookedSlots] = useState({}); // { "Wed May 28 2025": ["9:00 AM - 9:20 AM"] }
 
     const formatDate = (date) => {
         const year = date.getFullYear();
@@ -46,6 +54,7 @@ const Page = () => {
         const payload = {
             date: selectedDate.toDateString(),
             time: selectedSlot,
+            location: location,
             ...formData,
         };
 
@@ -64,8 +73,10 @@ const Page = () => {
                 setSelectedSlot(null);
                 setStep(1);
                 setFormData({ name: "", email: "", phone: "" });
+                window.location.reload();
             } else {
                 alert("Failed to submit booking.");
+
             }
         } catch (error) {
             console.error("Submission error:", error);
@@ -87,11 +98,9 @@ const Page = () => {
 
         const duration = toMinutes(end) - toMinutes(start);
 
-        if (duration % 60 === 0) {
-            return `${duration / 60} Hour${duration > 60 ? "s" : ""}`;
-        } else {
-            return `${duration} Minute${duration > 1 ? "s" : ""}`;
-        }
+        return duration % 60 === 0
+            ? `${duration / 60} Hour${duration > 60 ? "s" : ""}`
+            : `${duration} Minute${duration > 1 ? "s" : ""}`;
     };
 
     const formatSlotDateTime = (date, slot) => {
@@ -116,11 +125,30 @@ const Page = () => {
                 setLocation("Unknown location");
             }
         };
+
+        const fetchBookedSlots = async () => {
+            try {
+                const res = await fetch("https://sheetdb.io/api/v1/qb2v3jjppty15");
+                const data = await res.json();
+                const grouped = data.reduce((acc, entry) => {
+                    const { date, time } = entry;
+                    if (!acc[date]) acc[date] = [];
+                    acc[date].push(time);
+                    return acc;
+                }, {});
+                setBookedSlots(grouped);
+            } catch (err) {
+                console.error("Failed to fetch booked slots", err);
+            }
+        };
+
         fetchLocation();
+        fetchBookedSlots();
     }, []);
 
-
     const slots = selectedDate ? availableSlots[formatDate(selectedDate)] || [] : [];
+    const dateKey = selectedDate?.toDateString();
+    const disabledSlots = dateKey ? bookedSlots[dateKey] || [] : [];
 
     return (
         <section className={styles.bookingSec}>
@@ -129,20 +157,13 @@ const Page = () => {
                     <Col md={12} lg={4}>
                         <h2>Time Picker <HeadingBar /></h2>
                         <ul className={styles.meetingPoints}>
-                            <li>
-                                <ClockIcon /> <span>{getDuration(selectedSlot) || "Select a time slot"}</span>
-                            </li>
-                            <li>
-                                <CameraIcon /> <span>Web conferencing details provided upon confirmation.</span>
-                            </li>
-                            <li>
-                                <CalendarIcon /> <span>{formatSlotDateTime(selectedDate, selectedSlot) || "Select a date and time"}</span>
-                            </li>
-                            <li>
-                                <LocationIcon /> <span>{location}</span>
-                            </li>
+                            <li><ClockIcon /> <span>{getDuration(selectedSlot) || "Select a time slot"}</span></li>
+                            <li><CameraIcon /> <span>Web conferencing details provided upon confirmation.</span></li>
+                            <li><CalendarIcon /> <span>{formatSlotDateTime(selectedDate, selectedSlot) || "Select a date and time"}</span></li>
+                            <li><LocationIcon /> <span>{location}</span></li>
                         </ul>
                     </Col>
+
                     {step === 1 && (
                         <>
                             <Col md={6} lg={4}>
@@ -161,24 +182,29 @@ const Page = () => {
                                         <div className={styles.titleCurrentDate}>
                                             {selectedDate.toDateString()}
                                         </div>
-                                        {slots.map((slot, idx) => (
-                                            <div className={`${styles.slotItem} ${selectedSlot === slot ? styles.selected : ""}`} key={idx}>
-                                                <button
-                                                    onClick={() => setSelectedSlot(slot)}
-                                                    className={styles.slotButton}
+                                        {slots.map((slot, idx) => {
+                                            const isDisabled = disabledSlots.includes(slot);
+                                            const isSelected = selectedSlot === slot;
+                                            return (
+                                                <div
+                                                    key={idx}
+                                                    className={`${styles.slotItem} ${isSelected ? styles.selected : ""} ${isDisabled ? styles.disabled : ""}`}
                                                 >
-                                                    {slot}
-                                                </button>
-                                                {selectedSlot === slot && (
                                                     <button
-                                                        onClick={() => setStep(2)}
-                                                        className={styles.nextButton}
+                                                        onClick={() => !isDisabled && setSelectedSlot(slot)}
+                                                        className={styles.slotButton}
+                                                        disabled={isDisabled}
                                                     >
-                                                        Next
+                                                        {slot}
                                                     </button>
-                                                )}
-                                            </div>
-                                        ))}
+                                                    {isSelected && !isDisabled && (
+                                                        <button onClick={() => setStep(2)} className={styles.nextButton}>
+                                                            Next
+                                                        </button>
+                                                    )}
+                                                </div>
+                                            );
+                                        })}
                                     </div>
                                 ) : (
                                     <p className={styles.nodataFound}>No available slots for this date.</p>
@@ -186,6 +212,7 @@ const Page = () => {
                             </Col>
                         </>
                     )}
+
                     {step === 2 && (
                         <Col md={6} lg={4}>
                             <div className={styles.titBack}>
@@ -196,35 +223,12 @@ const Page = () => {
                             </div>
 
                             <form onSubmit={handleSubmit} className={styles.fromSubmit}>
-                                <input
-                                    type="text"
-                                    name="name"
-                                    placeholder="Name"
-                                    value={formData.name}
-                                    onChange={handleInputChange}
-                                    required
-                                />
-                                <input
-                                    type="email"
-                                    name="email"
-                                    placeholder="Email"
-                                    value={formData.email}
-                                    onChange={handleInputChange}
-                                    required
-                                />
-                                <input
-                                    type="tel"
-                                    name="phone"
-                                    placeholder="Phone"
-                                    value={formData.phone}
-                                    onChange={handleInputChange}
-                                    required
-                                />
+                                <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleInputChange} required />
+                                <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleInputChange} required />
+                                <input type="tel" name="phone" placeholder="Phone" value={formData.phone} onChange={handleInputChange} required />
                                 <p>By proceeding, you confirm that you have read and agree to Slotify Terms of Use and Privacy Notice.</p>
                                 <div className={styles.btnFlex}>
-                                    <button type="submit">
-                                        Submit
-                                    </button>
+                                    <button type="submit">Submit</button>
                                 </div>
                             </form>
                         </Col>
