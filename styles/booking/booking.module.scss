@@ -1,0 +1,618 @@
+.bookingSec {
+  height: 900px;
+  padding-top: 180px;
+  h2 {
+    color: #000;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  .nodataFound {
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .meetingPoints {
+    li {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      svg {
+        width: auto;
+        height: 20px;
+      }
+      span {
+        display: inline-block;
+        margin-left: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+  }
+  .slotBox {
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: auto;
+    .titleCurrentDate {
+      color: #000;
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 500;
+      text-align: center;
+    }
+    .slotItem {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.selected {
+        justify-content: space-between;
+        button {
+          color: #000;
+          background: #f3f3f3;
+          border: 1px solid #e6e6e6;
+          flex: 0 0 calc(50% - 2px);
+          font-size: 15px;
+          &:last-child {
+            background: #ff0004;
+            border: 1px solid #ff0004;
+            color: #fff;
+          }
+        }
+      }
+
+      button {
+        flex: 0 0 100%;
+        height: 50px;
+        color: #ff0004;
+        background: #fff;
+        border: none;
+        border: 1px solid #ff0004;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+        margin-bottom: 5px;
+        font-size: 15px;
+        font-weight: 600;
+
+        &:hover {
+          background: #ff0004;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .titBack {
+    position: relative;
+    .backBtn {
+      cursor: pointer;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #ff0004;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        width: auto;
+        height: 18px;
+      }
+    }
+  }
+  .fromSubmit {
+    input {
+      width: 100%;
+      height: 50px;
+      border: 1px solid #e6e6e6;
+      border-radius: 10px;
+      padding-left: 10px;
+      margin-bottom: 10px;
+      outline: none;
+      color: #333;
+    }
+    p {
+      color: #333;
+      margin-bottom: 10px;
+      font-size: 15px;
+      line-height: 22px;
+      font-weight: 400;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      text-align: center;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 15px;
+      color: #fff;
+      background: #ff0004;
+      min-width: 120px;
+      border: 0px;
+      border-radius: 10px;
+    }
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .bookingSec {
+    height: 800px;
+    padding-top: 120px;
+    h2 {
+      margin-bottom: 20px;
+      font-size: 35px;
+      line-height: 35px;
+    }
+    .nodataFound {
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .meetingPoints {
+      li {
+        margin-bottom: 20px;
+        svg {
+          height: 18px;
+        }
+        span {
+          font-size: 17px;
+          line-height: 22px;
+        }
+      }
+    }
+    .slotBox {
+      max-width: 80%;
+      .titleCurrentDate {
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 22px;
+      }
+      .slotItem {
+        &.selected {
+          button {
+            flex: 0 0 calc(50% - 2px);
+            font-size: 14px;
+          }
+        }
+        button {
+          flex: 0 0 100%;
+          height: 50px;
+          font-size: 15px;
+        }
+      }
+    }
+    .fromSubmit {
+      input {
+        height: 50px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 400;
+      }
+      button {
+        height: 50px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+  .bookingSec {
+    height: 700px;
+    padding-top: 150px;
+    h2 {
+      margin-bottom: 20px;
+      font-size: 30px;
+      line-height: 35px;
+      svg {
+        height: 10px;
+        width: auto;
+      }
+    }
+    .nodataFound {
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .meetingPoints {
+      li {
+        margin-bottom: 15px;
+        svg {
+          height: 16px;
+        }
+        span {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+    .slotBox {
+      max-width: 90%;
+      .titleCurrentDate {
+        margin-bottom: 10px;
+        font-size: 17px;
+        line-height: 22px;
+      }
+      .slotItem {
+        &.selected {
+          button {
+            flex: 0 0 calc(50% - 2px);
+            font-size: 14px;
+          }
+        }
+        button {
+          flex: 0 0 100%;
+          height: 50px;
+          font-size: 15px;
+        }
+      }
+    }
+    .fromSubmit {
+      input {
+        height: 50px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 400;
+      }
+      button {
+        height: 50px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+  .bookingSec {
+    height: 700px;
+    padding-top: 120px;
+    h2 {
+      margin-bottom: 20px;
+      font-size: 30px;
+      line-height: 30px;
+      svg {
+        height: 8px;
+        width: auto;
+      }
+    }
+    .nodataFound {
+      font-size: 15px;
+      line-height: 22px;
+    }
+    .meetingPoints {
+      li {
+        margin-bottom: 15px;
+        svg {
+          height: 15px;
+        }
+        span {
+          font-size: 15px;
+          line-height: 22px;
+        }
+      }
+    }
+    .slotBox {
+      max-width: 90%;
+      .titleCurrentDate {
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 22px;
+      }
+      .slotItem {
+        &.selected {
+          button {
+            flex: 0 0 calc(50% - 2px);
+            font-size: 14px;
+          }
+        }
+        button {
+          flex: 0 0 100%;
+          height: 50px;
+          font-size: 15px;
+        }
+      }
+    }
+    .fromSubmit {
+      input {
+        height: 50px;
+        font-size: 14px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+      }
+      button {
+        height: 50px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  .bookingSec {
+    height: 700px;
+    padding-top: 150px;
+    h2 {
+      margin-bottom: 10px;
+      font-size: 26px;
+      line-height: 30px;
+      svg {
+        height: 8px;
+        width: auto;
+      }
+    }
+    .nodataFound {
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .meetingPoints {
+      li {
+        margin-bottom: 15px;
+        svg {
+          height: 16px;
+        }
+        span {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+    .slotBox {
+      max-width: 100%;
+      .titleCurrentDate {
+        margin-bottom: 10px;
+        font-size: 17px;
+        line-height: 22px;
+      }
+      .slotItem {
+        &.selected {
+          button {
+            flex: 0 0 calc(50% - 2px);
+            font-size: 13px;
+          }
+        }
+        button {
+          flex: 0 0 100%;
+          height: 45px;
+          font-size: 14px;
+        }
+      }
+    }
+    .fromSubmit {
+      input {
+        height: 45px;
+        font-size: 14px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+      }
+      button {
+        height: 45px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+  .bookingSec {
+    height: 750px;
+    padding-top: 100px;
+    h2 {
+      margin-bottom: 25px;
+      font-size: 22px;
+      line-height: 40px;
+      svg {
+        display: block;
+        height: 8px;
+        width: auto;
+      }
+    }
+    .nodataFound {
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .meetingPoints {
+      li {
+        margin-bottom: 15px;
+        svg {
+          height: 16px;
+        }
+        span {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+    .slotBox {
+      max-width: 100%;
+      .titleCurrentDate {
+        margin-bottom: 10px;
+        font-size: 17px;
+        line-height: 22px;
+      }
+      .slotItem {
+        &.selected {
+          button {
+            flex: 0 0 calc(50% - 2px);
+            font-size: 13px;
+          }
+        }
+        button {
+          flex: 0 0 100%;
+          height: 45px;
+          font-size: 14px;
+        }
+      }
+    }
+    .fromSubmit {
+      input {
+        height: 45px;
+        font-size: 14px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+      }
+      button {
+        height: 45px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .bookingSec {
+    height: 960px;
+    padding-top: 100px;
+    h2 {
+      margin-bottom: 25px;
+      font-size: 22px;
+      line-height: 40px;
+      svg {
+        display: block;
+        height: 8px;
+        width: auto;
+      }
+    }
+    .nodataFound {
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .meetingPoints {
+      li {
+        margin-bottom: 15px;
+        svg {
+          height: 16px;
+        }
+        span {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+    .slotBox {
+      max-width: 400px;
+      margin: 0px;
+      .titleCurrentDate {
+        margin-bottom: 10px;
+        font-size: 17px;
+        line-height: 22px;
+      }
+      .slotItem {
+        &.selected {
+          button {
+            flex: 0 0 calc(50% - 2px);
+            font-size: 13px;
+          }
+        }
+        button {
+          flex: 0 0 100%;
+          height: 45px;
+          font-size: 14px;
+        }
+      }
+    }
+    .fromSubmit {
+      input {
+        height: 45px;
+        font-size: 14px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+      }
+      button {
+        height: 45px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .bookingSec {
+    min-height: 1000px;
+    padding-top: 90px;
+    height: 100%;
+    h2 {
+      margin-bottom: 25px;
+      font-size: 22px;
+      line-height: 40px;
+      svg {
+        display: block;
+        height: 8px;
+        width: auto;
+      }
+    }
+    .nodataFound {
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .meetingPoints {
+      li {
+        margin-bottom: 15px;
+        svg {
+          height: 16px;
+        }
+        span {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+    .slotBox {
+      max-width: 400px;
+
+      .titleCurrentDate {
+        margin-bottom: 10px;
+        font-size: 17px;
+        line-height: 22px;
+      }
+      .slotItem {
+        &.selected {
+          button {
+            flex: 0 0 calc(50% - 2px);
+            font-size: 13px;
+          }
+        }
+        button {
+          flex: 0 0 100%;
+          height: 45px;
+          font-size: 14px;
+        }
+      }
+    }
+    .fromSubmit {
+      input {
+        height: 45px;
+        font-size: 14px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+      }
+      button {
+        height: 45px;
+        font-size: 14px;
+      }
+    }
+  }
+}

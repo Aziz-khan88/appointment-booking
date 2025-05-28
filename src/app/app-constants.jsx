@@ -537,3 +537,89 @@ export function MenuOpen() {
         </svg>
     )
 }
+
+export function ClockIcon() {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            data-id="details-item-icon"
+            viewBox="0 0 10 10"
+        >
+            <path
+                fill="none"
+                stroke="#333"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M.5 5a4.5 4.5 0 1 0 9 0 4.5 4.5 0 1 0-9 0"
+            ></path>
+            <path
+                fill="none"
+                stroke="#333"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M5 3.269V5l1.759 2.052"
+            ></path>
+        </svg>
+    )
+}
+export function CameraIcon() {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            data-id="details-item-icon"
+            data-testid="web-conference-icon"
+            viewBox="0 0 10 10"
+        >
+            <path
+                fill="none"
+                stroke="#333"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M7.192 3.731V2.5a1 1 0 0 0-1-1H1.5a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h4.692a1 1 0 0 0 1-1V6.269l1.573.839a.5.5 0 0 0 .735-.441V3.333a.5.5 0 0 0-.735-.441Z"
+            ></path>
+        </svg>
+    )
+}
+
+export function CalendarIcon() {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            data-id="details-item-icon"
+            viewBox="0 0 20 20"
+        >
+            <path
+                fill="#333"
+                fillRule="evenodd"
+                d="M6 1a1 1 0 1 0-2 0v1H3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3h-1V1a1 1 0 1 0-2 0v1H6zm12 6V5a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v2zM2 9h16v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"
+                clipRule="evenodd"
+            ></path>
+        </svg>
+    )
+}
+
+export function LocationIcon() {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            data-id="details-item-icon"
+            viewBox="0 0 10 10"
+        >
+            <path
+                fill="none"
+                stroke="#333"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M.5 5a4.5 4.5 0 1 0 9 0 4.5 4.5 0 1 0-9 0"
+            ></path>
+            <path
+                fill="none"
+                stroke="#333"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M.846 6.731h1.212a1.21 1.21 0 0 0 1.211-1.212V4.481a1.21 1.21 0 0 1 1.212-1.212 1.21 1.21 0 0 0 1.211-1.211V.553M9.5 4.929a2.5 2.5 0 0 0-1.117-.275H6.9a1.212 1.212 0 1 0 0 2.423.865.865 0 0 1 .865.865v.605"
+            ></path>
+        </svg>
+    )
+}
