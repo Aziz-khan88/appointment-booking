@@ -20,8 +20,8 @@ const Feature = ({ data }) => {
             <Container>
                 <Row>
                     <Col md={12} lg={10} xl={10} xxl={9} className="m-auto text-center" >
-                        <h2>Powerful Features to Simplify Scheduling</h2>
-                        <p>From easy bookings to automated reminders, our software is built to save your time and boost your productivity.</p>
+                        <h2>{data.title}</h2>
+                        <p>{data.desc}</p>
                     </Col>
                 </Row>
             </Container>

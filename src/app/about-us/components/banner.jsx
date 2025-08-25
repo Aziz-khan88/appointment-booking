@@ -14,7 +14,7 @@ const Banner = () => {
                 <Row>
                     <Col className="text-center">
                         <h1>Why We Do What We Do</h1>
-                        <p>Because your time matters—and so does your client’s experience.</p>
+                        <p>Smarter scheduling saves time and great service builds loyalty.</p>
                     </Col>
                 </Row>
                 <Row className="mt-md-2 mt-lg-3 mt-xl-5">

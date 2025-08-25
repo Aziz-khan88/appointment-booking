@@ -2,12 +2,12 @@
 //===== Meta Data =====
 export const metadata = {
     //===== Meta Tags =====
-    title: "",
-    description: "",
+    title: "FAQs – Smart Scheduling & Booking Platform",
+    description: "Find answers to common questions about our scheduling software. Learn about free trials, automated reminders, security, and support to help you manage your time better.",
     //===== OG Tags =====
     openGraph: {
-        title: "",
-        description: "",
+        title: "FAQs – Smart Scheduling & Booking Platform",
+        description: "Find answers to common questions about our scheduling software. Learn about free trials, automated reminders, security, and support to help you manage your time better.",
         url: '/contact-us',
         siteName: "Slotify",
         locale: 'en_US',

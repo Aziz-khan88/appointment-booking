@@ -6,11 +6,36 @@ import Schedule from '@/src/app/home/schedule'
 import Faqs from '@/src/app/home/faqs'
 import Content from "@/src/app/[slug]/components/content"
 import { BlogData } from "@/src/app/[slug]/data/data"
-import Quickly from "./components/quickly"
+import Quickly from "@/src/app/[slug]/components/quickly"
 
 
 
+export async function generateMetadata({ params }) {
+    const { slug } = params;
+    const industry = BlogData.find((item) => item.slug === slug);
 
+    if (!industry) {
+        return {
+            title: "Not Found | Slotify",
+            description: "The requested industry page could not be found.",
+        };
+    }
+
+    return {
+        title: industry.tit,
+        description: industry.description,
+        openGraph: {
+            title: industry.tit,
+            description: industry.description,
+            url: industry.slug, // ✅ full URL recommended
+            siteName: "Slotify",
+            locale: "en_US",
+            type: "website",
+            images: "",
+        },
+        alternates: { canonical: industry.slug },
+    };
+}
 
 const Page = async ({ params }) => {
     const { slug } = params;
@@ -28,7 +53,7 @@ const Page = async ({ params }) => {
             <Quickly data={industry.QuicklyData} />
             <Content data={industry.ContentSection3} btn={false} />
             <Schedule data={industry.ScheduleData} />
-            <Faqs />
+            <Faqs data={industry.FaqData} />
 
         </>
     )

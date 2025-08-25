@@ -9,7 +9,7 @@ const Quickly = ({ data }) => {
                 <Row className="h-100">
                     <Col md={6} lg={6} className="my-auto order-2 order-lg-1">
                         <h2>{data.title}</h2>
-                        <p>{data.txt}</p>
+                        {data.txt}
                     </Col>
                     <Col md={6} lg={5} className="my-auto offset-lg-1 order-1 order-lg-2">
                         <div className={styles.imgBox}>

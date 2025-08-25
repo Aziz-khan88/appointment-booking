@@ -8,7 +8,7 @@ const Schedule = ({ data }) => {
         <section className={`${styles.scheduleSec}`} style={{ backgroundImage: `url(${data.img})` }}>
             <Container className="h-100">
                 <Row className="h-100">
-                    <Col md={10} lg={8} className="m-auto text-center">
+                    <Col md={10} lg={9} className="m-auto text-center">
                         <div className={styles.scheduleBox}>
                             <h2>{data.title}</h2>
                             <p>{data.txt}</p>

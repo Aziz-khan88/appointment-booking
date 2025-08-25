@@ -1,15 +1,15 @@
 import styles from "@/styles/home/contactfrom.module.scss"
 import { Col, Container, Form, Row } from "react-bootstrap"
 
-const Contact = ({ padding }) => {
+const Contact = ({ padding, data }) => {
     return (
         <section className={`${styles.contactFormSec} ${padding ? "" : "p-100"}`}>
             <Container>
                 <Row>
                     <Col className="m-auto">
                         <div className={styles.contactFormBox}>
-                            <h2>Connect with Us for Assistance and Inquiries</h2>
-                            <p>From seamless bookings to increased client engagement, our numbers speak for themselves. Join a growing network of businesses streamlining their scheduling with ease.</p>
+                            <h2>{data.title}</h2>
+                            <p>{data.desc}</p>
                             <div className={styles.formContainer}>
                                 <Form>
                                     <div className={styles.formListing}>

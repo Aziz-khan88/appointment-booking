@@ -9,13 +9,13 @@ const Values = () => {
                     <Col md={6} className="d-flex">
                         <div className={styles.valueBox}>
                             <h4>Mission</h4>
-                            <p>To simplify appointment scheduling for businesses and their clients by providing a seamless, reliable, and user-friendly booking experience that saves time, reduces no-shows, and supports growth.</p>
+                            <p>At Schedulifi, our mission is to simplify scheduling for every business with an online appointment booking system that works as hard as you do. By delivering a seamless, reliable, and client-friendly experience, our appointment booking software helps reduce no-shows, save time, and unlock new growth opportunities.</p>
                         </div>
                     </Col>
                     <Col md={6} className="d-flex">
                         <div className={styles.valueBox}>
                             <h4>Vision</h4>
-                            <p>To become the leading global platform for appointment management—empowering every business, from salons to clinics, to run smoother, smarter, and more connected than ever before.</p>
+                            <p>Our vision is to redefine how businesses manage time by becoming the world’s most trusted appointment management software. From solo professionals to global enterprises, Schedulifi empowers every industry with an automated appointment scheduler that makes booking smarter, service smoother, and connections stronger than ever before.</p>
                         </div>
                     </Col>
                 </Row>

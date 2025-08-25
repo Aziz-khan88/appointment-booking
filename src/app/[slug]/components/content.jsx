@@ -14,7 +14,7 @@ const Content = ({ data, btn, alternet }) => {
                     </Col>
                     <Col md={6} lg={6} className="my-auto">
                         <h2>{data.title}</h2>
-                        <p>{data.txt}</p>
+                        {data.txt}
                         {btn === false ?
                             ""
                             :

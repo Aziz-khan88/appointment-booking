@@ -2,12 +2,12 @@
 //===== Meta Data =====
 export const metadata = {
     //===== Meta Tags =====
-    title: "",
-    description: "",
+    title: "About Us | Schedulifi – Online Appointment Booking System for Every Business",
+    description: "Discover how Schedulifi simplifies scheduling with smart appointment booking software.",
     //===== OG Tags =====
     openGraph: {
-        title: "",
-        description: "",
+        title: "About Us | Schedulifi – Online Appointment Booking System for Every Business",
+        description: "Discover how Schedulifi simplifies scheduling with smart appointment booking software.",
         url: '/about-us',
         siteName: "Slotify",
         locale: 'en_US',

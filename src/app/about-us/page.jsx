@@ -2,12 +2,12 @@ import Banner from "@/src/app/about-us/components/banner"
 import Schedule from '@/src/app/home/schedule'
 import Values from "@/src/app/about-us/components/values"
 import Faqs from '@/src/app/home/faqs'
-
-
+import { FaqData } from "@/src/app/about-us/data/data"
 import ScheduleEducation from "media/images/industry/education/bannerCTA.webp"
+
 const ScheduleData = {
-    title: "Ready to Take Control of Your Schedule?",
-    txt: "Start your free trial today and experience effortless booking, reminders, and management all in one powerful platform built for every industry.",
+    title: "Take Charge of Your Time Today",
+    txt: "Skip the endless calls and no-shows. Schedulifi’s Online Appointment Booking System puts bookings, payments, and reminders in one powerful platform.",
     img: ScheduleEducation.src
 }
 const Page = () => {
@@ -16,7 +16,7 @@ const Page = () => {
             <Banner />
             <Schedule data={ScheduleData} />
             <Values />
-            <Faqs />
+            <Faqs data={FaqData} />
         </>
     )
 }

@@ -8,42 +8,8 @@ import Image from "next/image";
 import Img01 from "media/images/test/img01.webp"
 import Img02 from "media/images/test/img02.webp"
 import Img03 from "media/images/test/img03.webp"
-export const data = {
-    subtitle: "FAQs",
-    title: "Frequently Asked Question?",
-    txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-    Fqaslist: [
-        {
-            title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. ",
-            txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        },
-        {
-            title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. ",
-            txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        },
-        {
-            title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. ",
-            txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        },
-        {
-            title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. ",
-            txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        },
-        {
-            title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. ",
-            txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        },
-        {
-            title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. ",
-            txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        },
-        {
-            title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. ",
-            txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        },
-    ],
-};
-const Faqs = () => {
+
+const Faqs = ({ data }) => {
     const [activeIndex, setActiveIndex] = useState(0);
 
     const toggleFaq = (index) => {
