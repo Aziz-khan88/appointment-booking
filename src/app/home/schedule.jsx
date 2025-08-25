@@ -14,7 +14,7 @@ const Schedule = ({ data }) => {
                             <p>{data.txt}</p>
                             <div className={styles.flexButton}>
                                 <div className={styles.flexBtn}>
-                                    <Link href="#">Start Free Trial</Link>
+                                    <Link href="#">Start Booking</Link>
                                 </div>
                                 <div className={styles.flexBtn}>
                                     <Link href="#">Book a Demo</Link>

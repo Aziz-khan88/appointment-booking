@@ -12,29 +12,30 @@ import Image from "next/image";
 
 const ServiceData = [
     {
-        category: "Salon",
-        title: "Booking That’s as Polished as Your Service",
-        txt: "Make it easy for clients to book, reschedule, and pay—all while keeping your calendar organized and your chairs full.",
+        category: "Salons",
+        title: "Appointment Scheduling for Beauty Professionals",
+        txt: "Our appointment booking system for salons helps you manage bookings, reduce no-shows, and fill more seats every day.",
         image: Img02.src,
     },
     {
         category: "Gym",
-        title: "Fitness Scheduling, Simplified",
-        txt: "Let your members schedule classes, personal training, or equipment time with ease, so you can focus on gains, not admin.",
+        title: "Personal Training & Fitness Coaching Appointment Setting",
+        txt: "Simplify personal training bookings with a fitness trainer appointment scheduling tool designed for gyms and studios.",
         image: Img04.src,
     },
     {
-        category: "Hospital",
-        title: "Smarter Scheduling for Healthcare",
-        txt: "Streamline patient bookings, reduce wait times, and manage appointments with ease—so your staff can focus on care, not calendars.",
+        category: "Dentist",
+        title: "Appointment Booking System",
+        txt: "Simplify appointment bookings with a system built for doctors, dentists, and hospitals. Offer real- time scheduling, secure payments, and automated notifications for patients.",
         image: Img01.src,
     },
     {
-        category: "Garage",
-        title: "Drive Efficiency in Every Booking",
-        txt: "Let customers schedule services anytime, get reminders, and keep your bays full with a system designed for auto shops and garages.",
+        category: "Garages",
+        title: "Manage Vehicle Service Bookings",
+        txt: "A booking system for Mechanics and Garages to reduce no-shows by automating reminders and making scheduling convenient for your clients.",
         image: Img03.src,
     }
+
 ];
 
 const Services = () => {
@@ -60,7 +61,7 @@ const Services = () => {
                             <h3>{activeService.title}</h3>
                             <p>{activeService.txt}</p>
                             <div className="CommonBtn">
-                                <Link href="#"> <span></span>Connect Now</Link>
+                                <Link href="#"> <span></span>Start Booking</Link>
                             </div>
                         </div>
                     </Col>

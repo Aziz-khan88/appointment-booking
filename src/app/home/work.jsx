@@ -11,28 +11,28 @@ const Work = () => {
                     <Col>
                         <div className={styles.workBox}>
                             <Row className={styles.workBoxWhite}>
-                                <Col md={6} lg={5} className="my-auto">
+                                <Col md={6} lg={6} className="my-auto">
                                     <div className="subtitle">How its work</div>
-                                    <h2>Scheduling Made Simple in 3 Easy Steps</h2>
-                                    <p>Set your availability, share your link, and let clients book in seconds its that easy!</p>
+                                    <h2>Appointment Scheduling in 3 Easy Steps</h2>
+                                    <p>Schedulifi makes appointment booking quick and hassle-free. Whether it’s a service, consultation, or session, clients can book in just a few clicks, saving time for both your business and your customers.</p>
                                     <div className={styles.flexButton}>
                                         <div className={styles.flexBtn}>
-                                            <Link href="#">Start Free Trial</Link>
+                                            <Link href="#">Start Booking</Link>
                                         </div>
                                         <div className={styles.flexBtn}>
                                             <Link href="#">Book a Demo</Link>
                                         </div>
                                     </div>
                                 </Col>
-                                <Col md={6} className="offset-lg-1 my-auto">
+                                <Col md={6} className="my-auto">
                                     <div className={styles.workList}>
                                         <div className={styles.workItem}>
                                             <div className={styles.workIcon}>
                                                 <BullestPoint />
                                             </div>
                                             <div className={styles.workContent}>
-                                                <h5>Sign up & set availability</h5>
-                                                <p>Create your account and define the time slots you're available for appointments.</p>
+                                                <h5>Sign Up & Set Availability</h5>
+                                                <p>Add your working hours, staff members, and location, all from one dashboard.</p>
                                             </div>
                                         </div>
                                         <div className={styles.workItem}>
@@ -40,8 +40,8 @@ const Work = () => {
                                                 <BullestPoint />
                                             </div>
                                             <div className={styles.workContent}>
-                                                <h5>Share your booking link</h5>
-                                                <p>Send your personalized booking link to clients via email, social media, or your website.</p>
+                                                <h5>Share Your Booking Link</h5>
+                                                <p>Let clients book via link, website widget, or QR code.</p>
                                             </div>
                                         </div>
                                         <div className={styles.workItem}>
@@ -49,8 +49,8 @@ const Work = () => {
                                                 < BullestPoint />
                                             </div>
                                             <div className={styles.workContent}>
-                                                <h5> Clients book, get reminders</h5>
-                                                <p>Clients choose a time, and automated reminders help reduce no-shows.</p>
+                                                <h5>Relax & Manage Automatically</h5>
+                                                <p>Get notified instantly. Let Schedulifi handle reminders, reschedules, and follow-ups.</p>
                                             </div >
                                         </div >
                                     </div >

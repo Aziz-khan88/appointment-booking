@@ -56,8 +56,8 @@ const Faqs = ({ data }) => {
                                             <Image src={Img01.src} alt="Img02" width={42} height={42} />
                                             <Image src={Img03.src} alt="Img02" width={42} height={42} />
                                         </div>
-                                        <h5>Still have questions?</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                                        <h5>Fix the Gaps in Your Calendar</h5>
+                                        <p>Be the first to hear about exclusive offers, feature drops, and product updates.</p>
                                         <Form>
                                             <div className={styles.fromBox}>
                                                 <input type="email" placeholder="Enter Your Email" required />

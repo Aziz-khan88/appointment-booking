@@ -14,19 +14,19 @@ const OPTIONS = { loop: true, duration: 30 }
 
 const SLIDES = [
     {
-        title: "Effortless Appointment Scheduling for Professionals Across Industries",
-        txt: "Set up your services and team, show their availability, and start getting bookings around the clock—it's that simple.",
+        title: "Simplify Scheduling with Our Online Appointment Booking System",
+        txt: "Streamline bookings, reduce no-shows, and grow your business with Schedulifi,  the all-in-one appointment booking software trusted by doctors, salons, gyms, lawyers, and more.",
         img: Slide1.src,
     },
-    {
-        title: "Effortless Appointment Scheduling for Professionals Across Industries2",
-        txt: "Set up your services and team, show their availability, and start getting bookings around the clock—it's that simple.",
-        img: Slide2.src,
-    }, {
-        title: "Effortless Appointment Scheduling for Professionals Across Industries",
-        txt: "Set up your services and team, show their availability, and start getting bookings around the clock—it's that simple.",
-        img: Slide3.src,
-    }
+    // {
+    //     title: "Effortless Appointment Scheduling for Professionals Across Industries2",
+    //     txt: "Set up your services and team, show their availability, and start getting bookings around the clock—it's that simple.",
+    //     img: Slide2.src,
+    // }, {
+    //     title: "Effortless Appointment Scheduling for Professionals Across Industries",
+    //     txt: "Set up your services and team, show their availability, and start getting bookings around the clock—it's that simple.",
+    //     img: Slide3.src,
+    // }
 ]
 
 const Banner = () => {
@@ -45,7 +45,7 @@ const Banner = () => {
                                                 <h1>{item.title} <HeadingBar /></h1>
                                                 <p>{item.txt}</p>
                                                 <div className="CommonBtn">
-                                                    <Link href="#"> <span></span>Connect Now</Link>
+                                                    <Link href="#"> <span></span>Book a Demo</Link>
                                                 </div>
                                             </div>
                                         </Col>
