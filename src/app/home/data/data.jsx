@@ -60,28 +60,28 @@ export const FeatureData = {
     Clients: [
         {
             title: "Calendar Management",
-            txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+            txt: "Stay organized with an integrated calendar in your scheduling software. Sync tasks, events, and appointments in real time across all devices for seamless planning.",
             icon: <Calendar />
         },
         {
             title: "Online Booking",
-            txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+            txt: "Simplify the booking process with easy online scheduling through your automated appointment scheduler. Let clients book anytime, anywhere, with instant confirmations and maximum convenience.",
             icon: <Booking />
         },
         {
             title: "Staff Management",
-            txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+            txt: "Manage your team effortlessly with appointment management software that simplifies scheduling, roles, and responsibilities. Keep everyone on the same page and ensure smooth collaboration for better productivity.",
             icon: <Staff />
         },
         {
             title: "Notifications & Reminders",
-            txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+            txt: "Stay connected with an automated appointment scheduler that sends timely alerts, confirmations, and reminders. Never miss an important task or appointment again.",
             icon: <Notifications />
         }
         ,
         {
             title: "Reporting & Analytics",
-            txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+            txt: "Gain valuable insights with powerful reporting tools built into your appointment management software. Track progress, monitor performance, and make data-driven decisions with ease.",
             icon: <Reporting />
         }
 

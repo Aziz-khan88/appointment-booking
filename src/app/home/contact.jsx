@@ -35,7 +35,7 @@ const Contact = ({ padding, data }) => {
                                         </div>
                                         <div className={styles.formCheckBox}>
                                             <input type="checkbox" />
-                                            <span>Lorem ipsum dolor sit amet consectetur. Eu orci dui morbi fringilla. Commodo cursus eget purus sed morbi sit. Augue facilisi a amet leo vulputate eget.</span>
+                                            <span>I acknowledge and agree to receive appointment confirmations and reminders.</span>
                                         </div>
                                         <div className={styles.formsubmit}>
                                             <input type="submit" value="Submit" name="Submit" />

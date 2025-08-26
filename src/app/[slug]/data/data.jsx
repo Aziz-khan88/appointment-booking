@@ -134,28 +134,28 @@ export const BlogData = [
             Clients: [
                 {
                     title: "Calendar Management",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Stay on top of your schedule with ease. Every dental appointment is updated in real time across all your devices, so you always know when and where your next visit is scheduled.",
                     icon: <Calendar />
                 },
                 {
                     title: "Online Booking",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Book dental visits anytime, anywhere. Whether it’s a routine cleaning, check-up, or treatment, schedule 24/7 with instant confirmation no calls or waiting required.",
                     icon: <Booking />
                 },
                 {
                     title: "Staff Management",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Choose the right dentist or hygienist for your care. View availability, select your preferred professional, and book in just a few clicks, no hassle, no confusion.",
                     icon: <Staff />
                 },
                 {
                     title: "Notifications & Reminders",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Never miss a dental visit again. Receive instant confirmations, timely reminders before your appointment, and helpful follow-ups to keep your oral health on track.",
                     icon: <Notifications />
                 }
                 ,
                 {
                     title: "Reporting & Analytics",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Keep your dental history organized. Access past visits, monitor upcoming check-ups, and maintain treatment records all in one secure place.",
                     icon: <Reporting />
                 }
 
@@ -294,28 +294,28 @@ export const BlogData = [
             Clients: [
                 {
                     title: "Calendar Management",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Your schedule, simplified. Every booking updates in real time across your devices, so you always know exactly when and where your next session is.",
                     icon: <Calendar />
                 },
                 {
                     title: "Online Booking",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Book anytime, anywhere. Reserve classes or sessions in seconds with our 24/7 online booking system. Your spot is confirmed instantly, no calls or waiting needed.",
                     icon: <Booking />
                 },
                 {
                     title: "Staff Management",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Choose the right trainer or coach with ease. See who’s available, select your preferred staff member, and book your appointment. Your sessions are always confirmed.",
                     icon: <Staff />
                 },
                 {
                     title: "Notifications & Reminders",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Never miss a session again. Get instant confirmations, reminders before your class, and follow-ups that keep you consistent and on track.",
                     icon: <Notifications />
                 }
                 ,
                 {
                     title: "Reporting & Analytics",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Stay motivated by tracking your own journey. Review past bookings, monitor attendance, and track your progress with clear insights into your growth.",
                     icon: <Reporting />
                 }
 
@@ -461,28 +461,28 @@ export const BlogData = [
             Clients: [
                 {
                     title: "Calendar Management",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Organize your auto care schedule effortlessly. Every service booking syncs in real time across your devices, so you’ll always know when the next check-up is due.",
                     icon: <Calendar />
                 },
                 {
                     title: "Online Booking",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Book your car services anytime, anywhere. From oil changes to major repairs, schedule 24/7 with instant confirmation no calls, no waiting.",
                     icon: <Booking />
                 },
                 {
                     title: "Staff Management",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Choose the right mechanic or service specialist for your car. Check availability, select your preferred expert, and book with confidence, knowing your vehicle is in trusted hands.",
                     icon: <Staff />
                 },
                 {
                     title: "Notifications & Reminders",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Never miss a car service again. Get instant booking confirmations, timely reminders before your visit, and follow-ups to ensure your vehicle stays in top condition.",
                     icon: <Notifications />
                 }
                 ,
                 {
                     title: "Reporting & Analytics",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Keep track of your car’s complete service history. View past appointments, monitor upcoming services, and maintain detailed maintenance records all in one place.",
                     icon: <Reporting />
                 }
 
@@ -626,28 +626,28 @@ export const BlogData = [
             Clients: [
                 {
                     title: "Calendar Management",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Keep your beauty schedule stress-free. Every appointment syncs in real time across your devices, ensuring you never miss or double-book a session.",
                     icon: <Calendar />
                 },
                 {
                     title: "Online Booking",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Pamper yourself anytime, anywhere. Book your salon services 24/7 from haircuts to spa treatments with instant confirmation and zero hassle.",
                     icon: <Booking />
                 },
                 {
                     title: "Staff Management",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Choose your favorite stylist or beauty professional with ease. Browse their availability, select the right expert for your style needs, and book instantly, no waiting or phone calls required.",
                     icon: <Staff />
                 },
                 {
                     title: "Notifications & Reminders",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Stay on top of your self-care routine. Receive instant confirmations, gentle reminders before your appointment, and follow-ups so you never miss a beauty session.",
                     icon: <Notifications />
                 }
                 ,
                 {
                     title: "Reporting & Analytics",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Track your beauty journey effortlessly. View past services, upcoming bookings, and your entire treatment history all neatly organized in one place.",
                     icon: <Reporting />
                 }
 
@@ -789,28 +789,28 @@ export const BlogData = [
             Clients: [
                 {
                     title: "Calendar Management",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Your legal schedule, updates. Every appointment you book in real time across all your devices, ensuring you never double-book or miss a meeting.",
                     icon: <Calendar />
                 },
                 {
                     title: "Online Booking",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Book anytime, from anywhere. Secure your consultation in minutes with 24/7 online booking and get instant confirmation without waiting.",
                     icon: <Booking />
                 },
                 {
                     title: "Staff Management",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Choose the right lawyer with confidence. Browse available legal experts, find the one that fits your needs, and book directly without the need for back-and-forth communication.",
                     icon: <Staff />
                 },
                 {
                     title: "Notifications & Reminders",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Never miss a legal consultation. Receive instant confirmations, timely reminders, and follow-ups so you’re always prepared for your appointments.",
                     icon: <Notifications />
                 }
                 ,
                 {
                     title: "Reporting & Analytics",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Stay in control of your legal journey. Track past meetings, upcoming consultations, and booking history all in one convenient place.",
                     icon: <Reporting />
                 }
 
@@ -955,28 +955,28 @@ export const BlogData = [
             Clients: [
                 {
                     title: "Calendar Management",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "A clear view of your study schedule. Every booking updates in real time across devices, so you always know exactly when and where your next class is.",
                     icon: <Calendar />
                 },
                 {
                     title: "Online Booking",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Learning has become flexible. Book one-on-one tutoring or group lessons anytime, anywhere, with 24/7 access and instant confirmation—no phone calls, no delays.",
                     icon: <Booking />
                 },
                 {
                     title: "Staff Management",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Pick the right teacher or tutor with ease. Browse educator profiles, see their availability, and book your preferred instructor instantly to fit your learning needs.",
                     icon: <Staff />
                 },
                 {
                     title: "Notifications & Reminders",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Stay on top of your studies. Get instant class confirmations, timely reminders before every lesson, and follow-ups so you never miss an important session.",
                     icon: <Notifications />
                 }
                 ,
                 {
                     title: "Reporting & Analytics",
-                    txt: "Lorem ipsum dolor sit amet consectetur. Varius faucibus metus sed enim sit ultrices fusce elementum feugiat. In nulla in amet cursus. Dignissim tempor semper pharetra mi sollicitudin. Maecenas eget elementum amet eu.",
+                    txt: "Keep track of your learning progress. Review past classes, monitor attendance, and measure your study achievements all in one simple dashboard.",
                     icon: <Reporting />
                 }
 
