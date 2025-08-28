@@ -1,7 +1,7 @@
 
 export default function CaseStudiesPage() {
     const caseStudies = [
-        { title: "Case Study 1", slug: "slug01" },
+        { title: "Case Study 1", slug: "fitness" },
         { title: "Case Study 2", slug: "slug02" },
     ];
 

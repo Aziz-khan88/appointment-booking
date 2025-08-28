@@ -32,14 +32,22 @@ const ScheduleData = {
     img: ScheduleEducation.src
 }
 
+const ContactData = {
+    title: "It’s Time to Schedule Smarter with Schedulifi ",
+    desc: "Experience seamless appointment booking, automated reminders, and total calendar control with Schedulifi.",
+
+};
+
 
 const data = [
     {
         slug: "dentist",
+        tit: "Case Study: Green Valley Clinic Cuts No-Shows by 52%",
+        desc: "See how Green Valley Clinic used Schedulifi to reduce no-shows by 52%, save staff time, and boost patient satisfaction with smarter scheduling.",
         banner: {
             subtitle: "Short problem + transformation summary.",
-            title: "How Dr. James Increased Bookings by 200% with Slotify",
-            txt: "Lorem ipsum dolor sit amet consectetur. Pulvinar mauris nulla fusce vitae risus tempus tortor et. Habitasse accumsan risus nullam est duis iaculis quis magnis. Cras sem diam amet tempus lectus.",
+            title: "How Green Valley Clinic Cut No-Shows by 52% and Improved Patient Satisfaction with Schedulifi",
+            txt: "Green Valley Clinic, a mid-sized primary care practice serving over 3,000 patients, faced daily challenges with appointment management. Front desk staff were overwhelmed with phone calls, scheduling errors created frustration, and patient no-shows were draining revenue.",
             bannerIMG: DentistBanner.src,
         },
         fold: [
@@ -48,16 +56,14 @@ const data = [
                 txt: (
                     <>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur. Varius ac cursus libero
-                            pharetra lectus sit. Tortor id amet amet nunc sed feugiat lectus.
-                            Commodo egestas nibh vitae fames tincidunt eget volutpat. Cras
-                            fringilla justo condimentum nibh ipsum diam fusce. Sodales et
-                            eget massa tincidunt varius condimentum tempor sed.
+                            Before Schedulifi, Green Valley Clinic struggled with:
+
                         </p>
                         <ul className="contentStyle">
-                            <li>Missed appointments?</li>
-                            <li>Manual scheduling inefficiencies?</li>
-                            <li>Poor user experience?</li>
+                            <li>High no-show rates – Nearly 1 in 5 patients failed to show up, wasting valuable provider time.</li>
+                            <li>Phone traffic overload – Staff spent hours each day answering calls, reducing focus on patient care.</li>
+                            <li>Scheduling errors – Double bookings and gaps in the calendar caused inefficiency.</li>
+                            <li>Limited patient convenience – Patients couldn’t schedule appointments after office hours.</li>
                         </ul>
                     </>
                 ),
@@ -371,7 +377,7 @@ export default function CaseStudySlugPage({ params }) {
             <Content data={caseStudy} />
             <Performance data={caseStudy} />
             <Schedule data={ScheduleData} />
-            <Contact />
+            <Contact data={ContactData} />
         </>
     );
 }

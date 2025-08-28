@@ -8,8 +8,8 @@ const Contact = ({ padding, data }) => {
                 <Row>
                     <Col className="m-auto">
                         <div className={styles.contactFormBox}>
-                            <h2>{data.title}</h2>
-                            <p>{data.desc}</p>
+                            <h2>{data?.title}</h2>
+                            <p>{data?.desc}</p>
                             <div className={styles.formContainer}>
                                 <Form>
                                     <div className={styles.formListing}>
