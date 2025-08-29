@@ -13,20 +13,20 @@ const OPTIONS = { loop: true, duration: 30 }
 const SLIDES = [
     {
         clientImg: IMG01.src,
-        txt: "Lorem ipsum dolor sit amet consectetur. Sed a nulla eget arcu urna nec magnis. Neque suscipit tincidunt purus nullam interdum sed adipiscing vitae. Lobortis eu lacinia adipiscing orci ut.",
-        designation: "Dr. Ruben Franci",
+        txt: "Before Schedulifi, our front desk was drowning in calls and missed appointments were costing us thousands every month. Now, patients book online in seconds, and automated reminders have cut our no-shows in half. It’s like having an extra staff member who never makes mistakes.",
+        designation: "Dr. Angela Morris",
         star: 5,
     },
     {
         clientImg: IMG01.src,
-        txt: "Lorem ipsum dolor sit amet consectetur. Sed a nulla eget arcu urna nec magnis. Neque suscipit tincidunt purus nullam interdum sed adipiscing vitae. Lobortis eu lacinia adipiscing orci ut.",
-        designation: "Dr. Ruben Franci",
+        txt: "Running a salon means juggling dozens of bookings every day, and one missed appointment can throw everything off. Schedulifi has been a game-changer. Clients love the 24/7 booking, and we’ve seen a 40% increase in repeat appointments since switching.",
+        designation: "Jasmine Lopez",
         star: 5,
     },
     {
         clientImg: IMG01.src,
-        txt: "Lorem ipsum dolor sit amet consectetur. Sed a nulla eget arcu urna nec magnis. Neque suscipit tincidunt purus nullam interdum sed adipiscing vitae. Lobortis eu lacinia adipiscing orci ut.",
-        designation: "Dr. Ruben Francic ",
+        txt: "Our trainers used to spend hours managing schedules, and members couldn’t book after hours. With Schedulifi, classes fill up faster, no-shows are way down, and we’ve freed up 10+ hours a week. Now our team can focus on coaching, not calendars.",
+        designation: "Mark Davis",
         star: 5,
     }
 

@@ -13,25 +13,25 @@ const OPTIONS = { loop: true, duration: 30 }
 
 const SLIDES = [
     {
-        title: "How BrightSmile Dental Reduced No-Shows by 50% and Improved Patient Care",
-        txt: "BrightSmile Dental faced daily challenges with missed appointments, long phone queues, and scheduling errors that disrupted patient care. By switching to Schedulifi’s dental scheduling software, the practice cut no-shows in half, saved staff over 8 hours a week in admin tasks, and gave patients the convenience of booking online anytime with instant confirmations and reminders.",
+        title: "BrightSmile Dental Cuts No-Shows Efficiently",
+        txt: "BrightSmile Dental faced daily challenges, including missed appointments, long phone queues, and scheduling errors, which disrupted patient care. By switching to Schedulifi’s dental scheduling software, the practice reduced no-shows by 50%, saved staff over eight hours weekly on administrative tasks, and offered patients the convenience of online booking at any time with instant confirmations and reminders.",
         img: IMG01.src,
         link: "dentist"
     },
     {
-        title: "Effortless Appointment Scheduling for ",
-        txt: "AutoFix Garage was overwhelmed by constant phone calls, double-booked mechanics, and last-minute cancellations that left bays empty. After switching to Schedulifi’s auto repair scheduling software, the shop saved 12 hours a week in admin time, cut no-shows by 47%, and gave customers 24/7 online booking with instant confirmations and reminders—keeping their service bays full and their team focused on repairs.",
+        title: "AutoFix Garage Boosts Efficiency with Schedulifi ",
+        txt: "AutoFix Garage struggled with nonstop calls, double bookings, and costly no-shows. By adopting Schedulifi’s auto repair scheduling software, the shop reduced no-shows by 47% and saved 12 hours of weekly administrative work. Customers now enjoy 24/7 online booking, instant confirmations, and reminders, ensuring full-service bays and mechanics focused on quality repairs.",
         img: IMG01.src,
         link: "auto"
     }, {
-        title: "How FitPro Gym Increased Class Attendance by 43% with Schedulifi",
-        txt: "FitPro Gym, a busy fitness studio in Austin, struggled with missed classes, scheduling conflicts, and members unable to book after hours. After switching to Schedulifi’s fitness scheduling software, the gym reduced no-shows by 62%, increased class attendance by 43%, and saved 10+ hours a week in admin time—keeping trainers focused on members instead of managing calendars.",
+        title: "FitPro Gym Boosts Attendance with Schedulifi",
+        txt: "FitPro Gym in Austin faced constant struggles, including missed classes, scheduling conflicts, and frustrated members who were unable to book appointments after hours. By adopting our fitness scheduling software, the studio reduced no-shows by 62%, increased class attendance by 43%, and saved over 10 hours of weekly administrative work, freeing trainers to focus on clients instead of juggling calendars.",
         img: IMG01.src,
         link: "fitness"
     }
     , {
-        title: "How Ellis & Partners Cut No-Shows by 46% and Freed Up 10 Hours a Week",
-        txt: "Ellis & Partners, a busy family law firm in New York, was losing valuable billable hours to missed consultations and endless scheduling calls. After adopting Schedulifi’s legal scheduling software, the firm reduced no-shows by 46%, automated reminders for clients, and saved over 10 hours a week in administrative time—allowing attorneys to focus on cases, not calendars.",
+        title: "LuxeGlow Salon Thrives Using Schedulifi",
+        txt: "LuxeGlow Salon faced constant no-shows and overwhelming front desk calls. After adopting Schedulifi’s salon scheduling software, they reduced no-shows by 58% and saved over two hours of admin work daily. Automated reminders and 24/7 online booking kept stylist chairs full, improved client satisfaction, and allowed staff to focus more on providing exceptional services.",
         img: IMG01.src,
         link: "salon"
     }
