@@ -10,14 +10,14 @@ const Banner = ({ data }) => {
         <section className={styles.industryBanner}>
             <Container className="h-100">
                 <Row className="h-100" >
-                    <Col sm={7} md={7} lg={6} className="my-auto">
+                    <Col sm={7} md={7} lg={7} xl={6} className="my-auto">
                         <h1>{data.title}</h1>
                         <p>{data.txt}</p>
                         <div className="CommonBtn">
                             <Link href="#"> <span></span>Connect Now</Link>
                         </div>
                     </Col>
-                    <Col sm={5} md={5} lg={5} className="my-auto offset-lg-1">
+                    <Col sm={5} md={5} lg={5} xl={5} className="my-auto offset-xl-1">
                         <div className={styles.bannerImg}>
                             <Image src={data.img} alt={data.title} fill />
                         </div>

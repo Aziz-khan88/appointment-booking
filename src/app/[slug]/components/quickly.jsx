@@ -11,7 +11,7 @@ const Quickly = ({ data }) => {
                         <h2>{data.title}</h2>
                         {data.txt}
                     </Col>
-                    <Col md={6} lg={5} className="my-auto offset-lg-1 order-1 order-lg-2">
+                    <Col md={6} lg={5} className="my-auto offset-lg-1 order-1 order-md-2">
                         <div className={styles.imgBox}>
                             <Image src={data.img} alt={data.title} fill />
                         </div>
