@@ -45,7 +45,7 @@ const Banner = () => {
                                                 <h1>{item.title} <HeadingBar /></h1>
                                                 <p>{item.txt}</p>
                                                 <div className="CommonBtn">
-                                                    <Link href="#"> <span></span>Book a Demo</Link>
+                                                    <Link href="/booking"> <span></span>Book a Demo</Link>
                                                 </div>
                                             </div>
                                         </Col>
