@@ -45,7 +45,7 @@ const Banner = () => {
                                                 <h1>{item.title} <HeadingBar /></h1>
                                                 <p>{item.txt}</p>
                                                 <div className="CommonBtn">
-                                                    <Link href="#"> <span></span>Book a Demo</Link>
+                                                    <a href="https://admin21.pulse-force.com/root-dental/login/" target="_blank"> <span></span>Book a Demo</a>
                                                 </div>
                                             </div>
                                         </Col>
