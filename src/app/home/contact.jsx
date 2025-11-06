@@ -1,10 +1,12 @@
 "use client";
-
 import { useState } from "react";
+import { useRouter } from "next/navigation"; 
 import styles from "@/styles/home/contactfrom.module.scss";
 import { Col, Container, Form, Row } from "react-bootstrap";
 
 const Contact = ({ padding, data }) => {
+  const router = useRouter(); 
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -66,14 +68,9 @@ const Contact = ({ padding, data }) => {
 
       if (response.ok) {
         setStatus("Message sent successfully!");
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          subject: "",
-          message: "",
-          consent: false,
-        });
+        setTimeout(() => {
+          router.push("/thank-you");
+        }, 500);
       } else {
         console.error("API error:", result);
         setStatus("Failed to send message. Try again later.");

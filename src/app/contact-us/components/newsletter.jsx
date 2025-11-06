@@ -1,10 +1,11 @@
 "use client";
-
 import { useState } from "react";
+import { useRouter } from "next/navigation"; 
 import { Form } from "react-bootstrap";
 import styles from "@/styles/home/faqs.module.scss";
 
 const MinimalEmailForm = () => {
+   const router = useRouter();
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState("");
 
@@ -41,11 +42,13 @@ const MinimalEmailForm = () => {
       }
 
       if (response.ok) {
-        setStatus("Email submitted successfully!");
-        setEmail("");
+        setStatus("Message sent successfully!");
+        setTimeout(() => {
+          router.push("/thank-you");
+        }, 500);
       } else {
         console.error("API error:", result);
-        setStatus("Failed to submit email. Try again later.");
+        setStatus("Failed to send message. Try again later.");
       }
     } catch (err) {
       console.error("Fetch error:", err);
