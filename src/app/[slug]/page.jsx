@@ -28,7 +28,7 @@ export async function generateMetadata({ params }) {
             title: industry.tit,
             description: industry.description,
             url: industry.slug, // ✅ full URL recommended
-            siteName: "Slotify",
+            siteName: "Schedulifi ",
             locale: "en_US",
             type: "website",
             images: "",

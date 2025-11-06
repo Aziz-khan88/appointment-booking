@@ -9,7 +9,7 @@ export const metadata = {
         title: "",
         description: "",
         url: '/pricing',
-        siteName: "Slotify",
+        siteName: "Schedulifi ",
         locale: 'en_US',
         type: 'website',
         images: "",

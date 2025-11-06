@@ -9,7 +9,7 @@ export const metadata = {
         title: "About Us | Schedulifi – Online Appointment Booking System for Every Business",
         description: "Discover how Schedulifi simplifies scheduling with smart appointment booking software.",
         url: '/about-us',
-        siteName: "Slotify",
+        siteName: "Schedulifi ",
         locale: 'en_US',
         type: 'website',
         images: "",

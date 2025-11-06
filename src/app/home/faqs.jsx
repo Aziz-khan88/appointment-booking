@@ -8,6 +8,7 @@ import Image from "next/image";
 import Img01 from "media/images/test/img01.webp"
 import Img02 from "media/images/test/img02.webp"
 import Img03 from "media/images/test/img03.webp"
+import MinimalEmailForm from "@/src/app/contact-us/components/newsletter";
 
 const Faqs = ({ data }) => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -58,12 +59,7 @@ const Faqs = ({ data }) => {
                                         </div>
                                         <h5>Fix the Gaps in Your Calendar</h5>
                                         <p>Be the first to hear about exclusive offers, feature drops, and product updates.</p>
-                                        <Form>
-                                            <div className={styles.fromBox}>
-                                                <input type="email" placeholder="Enter Your Email" required />
-                                                <input type="submit" value="Submit" />
-                                            </div>
-                                        </Form>
+                                        <MinimalEmailForm />
                                     </div>
                                 </Col>
                             </Row>

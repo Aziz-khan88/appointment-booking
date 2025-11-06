@@ -28,7 +28,7 @@ export const metadata = {
     description:
       "",
     url: "/",
-    siteName: "Slotify",
+    siteName: "Schedulifi ",
     locale: "en_US",
     type: "website",
     images: "",
